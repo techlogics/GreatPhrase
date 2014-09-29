@@ -13,6 +13,8 @@
 @property (weak, nonatomic) IBOutlet UILabel *phraseLabel;
 - (IBAction)changePhrase:(id)sender;
 - (IBAction)favorite:(id)sender;
+- (IBAction)goToWiki:(id)sender;
 
+@property (weak, nonatomic) NSString * currentPhrase;
 @end
 
