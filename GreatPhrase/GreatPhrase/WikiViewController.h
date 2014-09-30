@@ -10,4 +10,5 @@
 
 @interface WikiViewController : UIViewController <UIWebViewDelegate>
 @property (nonatomic) UIWebView * wikiWebView;
+@property (nonatomic) UIActivityIndicatorView * indicator;
 @end

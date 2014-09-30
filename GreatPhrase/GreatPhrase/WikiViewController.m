@@ -7,6 +7,7 @@
 //
 
 #import "WikiViewController.h"
+#import "ViewController.h"
 
 @interface WikiViewController ()
 
@@ -21,15 +22,37 @@
     self.wikiWebView.delegate = self;
     [self.view addSubview:self.wikiWebView];
     
-    NSURL *url = [NSURL URLWithString:@"http://google.com"];
+    NSURL *url = [NSURL URLWithString:@"http://www.google.com"];
     NSURLRequest *urlRequest = [[NSURLRequest alloc] initWithURL:url];
     [self.wikiWebView loadRequest:urlRequest];
+    
+    [self startActivityIndicatorAnimation];
     
 }
 
 - (BOOL)webView:(UIWebView *)webView shouldStartLoadWithRequest:(NSURLRequest *)request navigationType:(UIWebViewNavigationType)navigationType
 {
     return YES;
+}
+
+- (void)webViewDidStartLoad:(UIWebView *)webView
+{
+    [UIApplication sharedApplication].networkActivityIndicatorVisible = YES;
+}
+
+- (void)webViewDidFinishLoad:(UIWebView *)webView
+{
+    [UIApplication sharedApplication].networkActivityIndicatorVisible = NO;
+}
+
+- (void)startActivityIndicatorAnimation
+{
+    _indicator = [[UIActivityIndicatorView alloc] initWithFrame:CGRectMake(0, 0, 20, 20)];
+    _indicator.activityIndicatorViewStyle = UIActivityIndicatorViewStyleGray;
+    _indicator.center = self.view.center;
+    _indicator.hidesWhenStopped = YES;
+    [_indicator startAnimating];
+    [self.view addSubview:_indicator];
 }
 
 - (void)didReceiveMemoryWarning {

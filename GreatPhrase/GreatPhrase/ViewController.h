@@ -11,10 +11,13 @@
 @interface ViewController : UIViewController
 
 @property (weak, nonatomic) IBOutlet UILabel *phraseLabel;
+@property (weak, nonatomic) IBOutlet UILabel *peopleNameLabel;
 - (IBAction)changePhrase:(id)sender;
 - (IBAction)favorite:(id)sender;
-- (IBAction)goToWiki:(id)sender;
 
 @property (weak, nonatomic) NSString * currentPhrase;
+@property (weak, nonatomic) NSString * currentPeopleName;
+@property NSArray * phraseList;
+@property NSString * wikiUrl;
 @end
 
