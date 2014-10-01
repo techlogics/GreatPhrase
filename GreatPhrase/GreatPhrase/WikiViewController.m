@@ -7,7 +7,6 @@
 //
 
 #import "WikiViewController.h"
-#import "ViewController.h"
 
 @interface WikiViewController ()
 
@@ -22,7 +21,7 @@
     self.wikiWebView.delegate = self;
     [self.view addSubview:self.wikiWebView];
     
-    NSURL *url = [NSURL URLWithString:@"http://www.google.com"];
+    NSURL *url = [NSURL URLWithString:_url];
     NSURLRequest *urlRequest = [[NSURLRequest alloc] initWithURL:url];
     [self.wikiWebView loadRequest:urlRequest];
     

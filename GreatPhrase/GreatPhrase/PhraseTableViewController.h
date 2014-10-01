@@ -9,5 +9,5 @@
 #import <UIKit/UIKit.h>
 
 @interface PhraseTableViewController : UITableViewController
-
+@property NSDictionary * phraseList;
 @end
