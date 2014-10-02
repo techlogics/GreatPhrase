@@ -201,8 +201,28 @@
     NSString * name = [_phraseList valueForKeyPath:[NSString stringWithFormat:@"%d.name%d", randomKey, randomKey]];
     [_name setTitle:name forState:UIControlStateNormal];
     _wikiUrl = [_phraseList valueForKeyPath:[NSString stringWithFormat:@"%d.url%d", randomKey, randomKey]];
-
-    [self setupLocalNotification];
+    
+    
+    
+    NSCalendar *calendar = [[NSCalendar alloc] initWithCalendarIdentifier:NSCalendarIdentifierGregorian];
+    NSDate *now = [NSDate date];
+    NSDateComponents *componentsForFireDate = [calendar components:(NSCalendarUnitYear | NSCalendarUnitMonth |  NSCalendarUnitHour | NSCalendarUnitMinute| NSCalendarUnitSecond | NSCalendarUnitWeekday) fromDate: now];
+    // 時間帯を固定
+    [componentsForFireDate setHour: 8];
+    [componentsForFireDate setMinute:0] ;
+    [componentsForFireDate setSecond:0] ;
+    [componentsForFireDate setTimeZone:[NSTimeZone defaultTimeZone]];
+    UILocalNotification* notifyAlarm = [[UILocalNotification alloc] init];
+    // 一日ごとに通知を送る
+    notifyAlarm.repeatInterval = NSCalendarUnitDay;
+    
+    notifyAlarm.fireDate = [calendar dateFromComponents:componentsForFireDate];
+    NSLog(@"fireDate is %@",notifyAlarm.fireDate);
+    notifyAlarm.timeZone = [NSTimeZone defaultTimeZone];
+    notifyAlarm.alertBody = [_phraseList valueForKeyPath:[NSString stringWithFormat:@"%d.name%d:%d.phrase%d", randomKey, randomKey, randomKey, randomKey]]; // 通知するメッセージ
+    notifyAlarm.alertAction = @"Open"; // ダイアログで表示されたときのボタンの文言
+    //UILocalNotificationを実行する
+    [[UIApplication sharedApplication] scheduleLocalNotification:notifyAlarm];
     
 }
 
@@ -217,7 +237,6 @@
     _phraseLabel.text = [_phraseList valueForKeyPath:[NSString stringWithFormat:@"%d.phrase%d", randomKey, randomKey]];
     NSString * name = [_phraseList valueForKeyPath:[NSString stringWithFormat:@"%d.name%d", randomKey, randomKey]];
     [_name setTitle:name forState:UIControlStateNormal];
-    // _peopleNameLabel.text = [_phraseList valueForKeyPath:[NSString stringWithFormat:@"%d.name%d", randomKey, randomKey]];
     _wikiUrl = [_phraseList valueForKeyPath:[NSString stringWithFormat:@"%d.url%d", randomKey, randomKey]];
 }
 
@@ -227,7 +246,6 @@
     _phraseLabel.text = [_phraseList valueForKeyPath:[NSString stringWithFormat:@"%d.phrase%d", randomKey, randomKey]];
     NSString * name = [_phraseList valueForKeyPath:[NSString stringWithFormat:@"%d.name%d", randomKey, randomKey]];
     [_name setTitle:name forState:UIControlStateNormal];
-    // _peopleNameLabel.text = [_phraseList valueForKeyPath:[NSString stringWithFormat:@"%d.name%d", randomKey, randomKey]];
     _wikiUrl = [_phraseList valueForKeyPath:[NSString stringWithFormat:@"%d.url%d", randomKey, randomKey]];
 }
 
@@ -237,51 +255,13 @@
     
 }
 
-- (IBAction)goWiki:(id)sender
-{
-    // [self performSegueWithIdentifier:@"wikiSegue" sender:self];
-}
-
 -(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
     //Segueの特定
     if ( [[segue identifier] isEqualToString:@"wikiSegue"] ) {
         WikiViewController *wikiViewController = [segue destinationViewController];
-        //ここで遷移先ビューのクラスの変数receiveStringに値を渡している
         wikiViewController.url = _wikiUrl;
     }
 }
 
-- (void)setupLocalNotification
-{
-    int randomKey = arc4random() % 50;
-    _phraseLabel.text = [_phraseList valueForKeyPath:[NSString stringWithFormat:@"%d.phrase%d", randomKey, randomKey]];
-    NSString * text = [_phraseList valueForKeyPath:[NSString stringWithFormat:@"%d.name%d", randomKey, randomKey]];
-    _wikiUrl = [_phraseList valueForKeyPath:[NSString stringWithFormat:@"%d.url%d", randomKey, randomKey]];
-    
-    
-    // 設定されているローカル通知をすべてキャンセルする
-    [[UIApplication sharedApplication] cancelAllLocalNotifications];
-
-    NSCalendar *calendar = [[NSCalendar alloc] initWithCalendarIdentifier:NSCalendarIdentifierGregorian];
-    NSDate *now = [NSDate date];
-    NSDateComponents *componentsForFireDate = [calendar components:(NSCalendarUnitYear | NSCalendarUnitMonth |  NSCalendarUnitHour | NSCalendarUnitMinute| NSCalendarUnitSecond | NSCalendarUnitWeekday) fromDate: now];
-    // 時間帯を固定
-    [componentsForFireDate setHour: 8];
-    [componentsForFireDate setMinute:0] ;
-    [componentsForFireDate setSecond:0] ;
-    [componentsForFireDate setTimeZone:[NSTimeZone defaultTimeZone]];
-    UILocalNotification* notifyAlarm = [[UILocalNotification alloc]
-                                        init];
-    // 一日ごとに通知を送る
-    notifyAlarm.repeatInterval = NSCalendarUnitDay;
-    
-    notifyAlarm.fireDate = [calendar dateFromComponents:componentsForFireDate];
-    NSLog(@"fireDate is %@",notifyAlarm.fireDate);
-    notifyAlarm.timeZone = [NSTimeZone defaultTimeZone];
-    notifyAlarm.alertBody = text; // 通知するメッセージ
-    notifyAlarm.alertAction = @"Open"; // ダイアログで表示されたときのボタンの文言
-    //UILocalNotificationを実行する
-    [[UIApplication sharedApplication] scheduleLocalNotification:notifyAlarm];
-}
 @end

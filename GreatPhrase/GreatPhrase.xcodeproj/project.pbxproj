@@ -14,7 +14,6 @@
 		9624A05919D840DE00466A0E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9624A05819D840DE00466A0E /* Images.xcassets */; };
 		9624A05C19D840DE00466A0E /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9624A05A19D840DE00466A0E /* LaunchScreen.xib */; };
 		9624A06819D840DE00466A0E /* GreatPhraseTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9624A06719D840DE00466A0E /* GreatPhraseTests.m */; };
-		962A11AD19D8528B00469165 /* SettingsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 962A11AC19D8528B00469165 /* SettingsTableViewController.m */; };
 		962A11B019D852A000469165 /* PhraseTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 962A11AF19D852A000469165 /* PhraseTableViewController.m */; };
 		962A11B319D852BD00469165 /* FavoriteTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 962A11B219D852BD00469165 /* FavoriteTableViewController.m */; };
 		96E12E6F19D9A0BA006921EF /* WikiViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 96E12E6E19D9A0BA006921EF /* WikiViewController.m */; };
@@ -44,8 +43,6 @@
 		9624A06119D840DE00466A0E /* GreatPhraseTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GreatPhraseTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9624A06619D840DE00466A0E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9624A06719D840DE00466A0E /* GreatPhraseTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GreatPhraseTests.m; sourceTree = "<group>"; };
-		962A11AB19D8528B00469165 /* SettingsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsTableViewController.h; sourceTree = "<group>"; };
-		962A11AC19D8528B00469165 /* SettingsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsTableViewController.m; sourceTree = "<group>"; };
 		962A11AE19D852A000469165 /* PhraseTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhraseTableViewController.h; sourceTree = "<group>"; };
 		962A11AF19D852A000469165 /* PhraseTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhraseTableViewController.m; sourceTree = "<group>"; };
 		962A11B119D852BD00469165 /* FavoriteTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FavoriteTableViewController.h; sourceTree = "<group>"; };
@@ -97,8 +94,6 @@
 				9624A05019D840DE00466A0E /* AppDelegate.m */,
 				9624A05219D840DE00466A0E /* ViewController.h */,
 				9624A05319D840DE00466A0E /* ViewController.m */,
-				962A11AB19D8528B00469165 /* SettingsTableViewController.h */,
-				962A11AC19D8528B00469165 /* SettingsTableViewController.m */,
 				962A11AE19D852A000469165 /* PhraseTableViewController.h */,
 				962A11AF19D852A000469165 /* PhraseTableViewController.m */,
 				962A11B119D852BD00469165 /* FavoriteTableViewController.h */,
@@ -239,7 +234,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				962A11AD19D8528B00469165 /* SettingsTableViewController.m in Sources */,
 				962A11B319D852BD00469165 /* FavoriteTableViewController.m in Sources */,
 				9624A05419D840DE00466A0E /* ViewController.m in Sources */,
 				9624A05119D840DE00466A0E /* AppDelegate.m in Sources */,

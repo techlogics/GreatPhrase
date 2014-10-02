@@ -14,7 +14,6 @@
 @property (weak, nonatomic) IBOutlet UIButton *name;
 
 - (IBAction)favorite:(id)sender;
-- (IBAction)goWiki:(id)sender;
 
 @property NSDictionary * phraseList;
 @property NSString * wikiUrl;
