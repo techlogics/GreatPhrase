@@ -200,7 +200,9 @@
     
     cell.textLabel.numberOfLines = 0;
     cell.textLabel.text = [_phraseList valueForKeyPath:[NSString stringWithFormat:@"%d.phrase%d", (int)indexPath.row, (int)indexPath.row]];
-    cell.detailTextLabel.text = [_phraseList valueForKeyPath:[NSString stringWithFormat:@"%d.name%d", (int)indexPath.row, (int)indexPath.row]];
+    NSString * name = [_phraseList valueForKeyPath:[NSString stringWithFormat:@"%d.name%d", (int)indexPath.row, (int)indexPath.row]];
+    cell.detailTextLabel.text = name;
+    cell.imageView.image = [UIImage imageNamed:name];
     return cell;
 }
 

@@ -31,6 +31,10 @@
 {
     [super viewDidLoad];
     
+    _listButton.layer.cornerRadius = 40.0;
+    _favoriteButton.layer.cornerRadius = 40.0;
+    _peopleImage.layer.cornerRadius = 40.0;
+    
     _phraseList = @{
                     @"0":@{@"phrase0":@"墓場で一番の金持ちになることは私には重要ではない。夜眠るとき、我々は素晴らしいことをしたと言えること、それが重要だ。",
                            @"name0":@"スティーブ・ジョブズ",
@@ -138,7 +142,7 @@
                             @"name34":@"ブライアン・アダムス",
                             @"url34":@"http://ja.wikipedia.org/wiki/%E3%83%96%E3%83%A9%E3%82%A4%E3%82%A2%E3%83%B3%E3%83%BB%E3%82%A2%E3%83%80%E3%83%A0%E3%82%B9"},
                     @"35":@{@"phrase35":@"やるべきことはやる。自分がどうなろうとも、いかなる障害、危険、圧力があろうとも。これは人間道徳の基本。",
-                            @"name35":@"ジョン・　F・ケネディ",
+                            @"name35":@"ジョン・F・ケネディ",
                             @"url35":@"http://ja.wikipedia.org/wiki/%E3%82%B8%E3%83%A7%E3%83%B3%E3%83%BBF%E3%83%BB%E3%82%B1%E3%83%8D%E3%83%87%E3%82%A3"},
                     @"36":@{@"phrase36":@"気に入らないものは、棄てておくか、あるいは改善するかである。",
                             @"name36":@"ゲーテ",
@@ -194,33 +198,40 @@
     leftSwipe.numberOfTouchesRequired = 1;
     [self.view addGestureRecognizer:leftSwipe];
     
+    
     _phraseLabel.numberOfLines = 0; // 行数無制限
     _phraseLabel.lineBreakMode = NSLineBreakByWordWrapping;
     int randomKey = arc4random() % 50;
-    _phraseLabel.text = [_phraseList valueForKeyPath:[NSString stringWithFormat:@"%d.phrase%d", randomKey, randomKey]];
+    NSString * phrase = [_phraseList valueForKeyPath:[NSString stringWithFormat:@"%d.phrase%d", randomKey, randomKey]];
     NSString * name = [_phraseList valueForKeyPath:[NSString stringWithFormat:@"%d.name%d", randomKey, randomKey]];
-    [_name setTitle:name forState:UIControlStateNormal];
+    _phraseLabel.text = [NSString stringWithFormat:@"%@ - %@", phrase, name];
     _wikiUrl = [_phraseList valueForKeyPath:[NSString stringWithFormat:@"%d.url%d", randomKey, randomKey]];
+    _peopleImage.image = [UIImage imageNamed:[NSString stringWithFormat:@"%@.png", name]];
     
     
-    
+    //------通知登録------//
     NSCalendar *calendar = [[NSCalendar alloc] initWithCalendarIdentifier:NSCalendarIdentifierGregorian];
     NSDate *now = [NSDate date];
     NSDateComponents *componentsForFireDate = [calendar components:(NSCalendarUnitYear | NSCalendarUnitMonth |  NSCalendarUnitHour | NSCalendarUnitMinute| NSCalendarUnitSecond | NSCalendarUnitWeekday) fromDate: now];
+    
     // 時間帯を固定
     [componentsForFireDate setHour: 8];
     [componentsForFireDate setMinute:0] ;
     [componentsForFireDate setSecond:0] ;
     [componentsForFireDate setTimeZone:[NSTimeZone defaultTimeZone]];
     UILocalNotification* notifyAlarm = [[UILocalNotification alloc] init];
+    
     // 一日ごとに通知を送る
     notifyAlarm.repeatInterval = NSCalendarUnitDay;
     
     notifyAlarm.fireDate = [calendar dateFromComponents:componentsForFireDate];
     NSLog(@"fireDate is %@",notifyAlarm.fireDate);
     notifyAlarm.timeZone = [NSTimeZone defaultTimeZone];
-    notifyAlarm.alertBody = [_phraseList valueForKeyPath:[NSString stringWithFormat:@"%d.name%d:%d.phrase%d", randomKey, randomKey, randomKey, randomKey]]; // 通知するメッセージ
-    notifyAlarm.alertAction = @"Open"; // ダイアログで表示されたときのボタンの文言
+    
+    // 通知するメッセージ
+    notifyAlarm.alertBody = [NSString stringWithFormat:@"%@ - %@", phrase, name];
+    // ダイアログで表示されたときのボタンの文言
+    notifyAlarm.alertAction = @"Open";
     //UILocalNotificationを実行する
     [[UIApplication sharedApplication] scheduleLocalNotification:notifyAlarm];
     
@@ -231,22 +242,26 @@
     [super didReceiveMemoryWarning];
 }
 
+// 右にスワイプでランダムにフレーズ切り替え
 - (void)swipeRight:(UIGestureRecognizer *)gesture
 {
     int randomKey = arc4random() % 50;
-    _phraseLabel.text = [_phraseList valueForKeyPath:[NSString stringWithFormat:@"%d.phrase%d", randomKey, randomKey]];
+    NSString * phrase = [_phraseList valueForKeyPath:[NSString stringWithFormat:@"%d.phrase%d", randomKey, randomKey]];
     NSString * name = [_phraseList valueForKeyPath:[NSString stringWithFormat:@"%d.name%d", randomKey, randomKey]];
-    [_name setTitle:name forState:UIControlStateNormal];
+    _phraseLabel.text = [NSString stringWithFormat:@"%@ - %@", phrase, name];
     _wikiUrl = [_phraseList valueForKeyPath:[NSString stringWithFormat:@"%d.url%d", randomKey, randomKey]];
+    _peopleImage.image = [UIImage imageNamed:[NSString stringWithFormat:@"%@.png", name]];
 }
 
+// 左のスワイプでランダムにフレーズ切り替え
 - (void)swipeLeft:(UIGestureRecognizer *)gesture
 {
     int randomKey = arc4random() % 50;
-    _phraseLabel.text = [_phraseList valueForKeyPath:[NSString stringWithFormat:@"%d.phrase%d", randomKey, randomKey]];
+    NSString * phrase = [_phraseList valueForKeyPath:[NSString stringWithFormat:@"%d.phrase%d", randomKey, randomKey]];
     NSString * name = [_phraseList valueForKeyPath:[NSString stringWithFormat:@"%d.name%d", randomKey, randomKey]];
-    [_name setTitle:name forState:UIControlStateNormal];
+    _phraseLabel.text = [NSString stringWithFormat:@"%@ - %@", phrase, name];
     _wikiUrl = [_phraseList valueForKeyPath:[NSString stringWithFormat:@"%d.url%d", randomKey, randomKey]];
+    _peopleImage.image = [UIImage imageNamed:[NSString stringWithFormat:@"%@.png", name]];
 }
 
 // お気に入りに登録
@@ -255,6 +270,7 @@
     
 }
 
+// wikiへの移動
 -(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
     //Segueの特定
@@ -264,4 +280,14 @@
     }
 }
 
+// ナビゲーションバーを消す処理
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    [self.navigationController setNavigationBarHidden:YES animated:YES];
+}
+
+- (void)viewWillDisappear:(BOOL)animated {
+    [super viewWillDisappear:animated];
+    [self.navigationController setNavigationBarHidden:NO animated:YES];
+}
 @end
