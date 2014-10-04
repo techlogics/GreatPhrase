@@ -16,6 +16,77 @@
 		9624A06819D840DE00466A0E /* GreatPhraseTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9624A06719D840DE00466A0E /* GreatPhraseTests.m */; };
 		962A11B019D852A000469165 /* PhraseTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 962A11AF19D852A000469165 /* PhraseTableViewController.m */; };
 		962A11B319D852BD00469165 /* FavoriteTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 962A11B219D852BD00469165 /* FavoriteTableViewController.m */; };
+		96906B3C19E0766500AA5BE8 /* wiki.png in Resources */ = {isa = PBXBuildFile; fileRef = 96906B1819E0766500AA5BE8 /* wiki.png */; };
+		96906B3D19E0766500AA5BE8 /* アイザック・ニュートンsmall.png in Resources */ = {isa = PBXBuildFile; fileRef = 96906B1919E0766500AA5BE8 /* アイザック・ニュートンsmall.png */; };
+		96906B3E19E0766500AA5BE8 /* アルベルト・アインシュタインsmall.png in Resources */ = {isa = PBXBuildFile; fileRef = 96906B1A19E0766500AA5BE8 /* アルベルト・アインシュタインsmall.png */; };
+		96906B3F19E0766500AA5BE8 /* アンデルセンsmall.png in Resources */ = {isa = PBXBuildFile; fileRef = 96906B1B19E0766500AA5BE8 /* アンデルセンsmall.png */; };
+		96906B4019E0766500AA5BE8 /* イチローsmall.png in Resources */ = {isa = PBXBuildFile; fileRef = 96906B1C19E0766500AA5BE8 /* イチローsmall.png */; };
+		96906B4119E0766500AA5BE8 /* ウォルト・ディズニーsmall.png in Resources */ = {isa = PBXBuildFile; fileRef = 96906B1D19E0766500AA5BE8 /* ウォルト・ディズニーsmall.png */; };
+		96906B4219E0766500AA5BE8 /* エイブラハム・リンカーンsmall.png in Resources */ = {isa = PBXBuildFile; fileRef = 96906B1E19E0766500AA5BE8 /* エイブラハム・リンカーンsmall.png */; };
+		96906B4319E0766500AA5BE8 /* オスカー・ワイルドsmall.png in Resources */ = {isa = PBXBuildFile; fileRef = 96906B1F19E0766500AA5BE8 /* オスカー・ワイルドsmall.png */; };
+		96906B4419E0766500AA5BE8 /* オノ・ヨーコsmall.png in Resources */ = {isa = PBXBuildFile; fileRef = 96906B2019E0766500AA5BE8 /* オノ・ヨーコsmall.png */; };
+		96906B4519E0766500AA5BE8 /* オードリー・ヘップバーンsmall.png in Resources */ = {isa = PBXBuildFile; fileRef = 96906B2119E0766500AA5BE8 /* オードリー・ヘップバーンsmall.png */; };
+		96906B4619E0766500AA5BE8 /* ガリレオ・ガリレイsmall.png in Resources */ = {isa = PBXBuildFile; fileRef = 96906B2219E0766500AA5BE8 /* ガリレオ・ガリレイsmall.png */; };
+		96906B4719E0766500AA5BE8 /* ゲーテsmall.png in Resources */ = {isa = PBXBuildFile; fileRef = 96906B2319E0766500AA5BE8 /* ゲーテsmall.png */; };
+		96906B4819E0766500AA5BE8 /* ジョン・F・ケネディsmall.png in Resources */ = {isa = PBXBuildFile; fileRef = 96906B2419E0766500AA5BE8 /* ジョン・F・ケネディsmall.png */; };
+		96906B4919E0766500AA5BE8 /* スティーブ・ジョブズsmall.png in Resources */ = {isa = PBXBuildFile; fileRef = 96906B2519E0766500AA5BE8 /* スティーブ・ジョブズsmall.png */; };
+		96906B4A19E0766500AA5BE8 /* スピノザsmall.png in Resources */ = {isa = PBXBuildFile; fileRef = 96906B2619E0766500AA5BE8 /* スピノザsmall.png */; };
+		96906B4B19E0766500AA5BE8 /* セオドア・ルーズベルトsmall.png in Resources */ = {isa = PBXBuildFile; fileRef = 96906B2719E0766500AA5BE8 /* セオドア・ルーズベルトsmall.png */; };
+		96906B4C19E0766500AA5BE8 /* デール・カーネギーsmall.png in Resources */ = {isa = PBXBuildFile; fileRef = 96906B2819E0766500AA5BE8 /* デール・カーネギーsmall.png */; };
+		96906B4D19E0766500AA5BE8 /* トーマス・エジソンsmall.png in Resources */ = {isa = PBXBuildFile; fileRef = 96906B2919E0766500AA5BE8 /* トーマス・エジソンsmall.png */; };
+		96906B4E19E0766500AA5BE8 /* ナポレオン・ボナパルトsmall.png in Resources */ = {isa = PBXBuildFile; fileRef = 96906B2A19E0766500AA5BE8 /* ナポレオン・ボナパルトsmall.png */; };
+		96906B4F19E0766500AA5BE8 /* ニーチェsmall.png in Resources */ = {isa = PBXBuildFile; fileRef = 96906B2B19E0766500AA5BE8 /* ニーチェsmall.png */; };
+		96906B5019E0766500AA5BE8 /* ビル・ゲイツsmall.png in Resources */ = {isa = PBXBuildFile; fileRef = 96906B2C19E0766500AA5BE8 /* ビル・ゲイツsmall.png */; };
+		96906B5119E0766500AA5BE8 /* ピタゴラスsmall.png in Resources */ = {isa = PBXBuildFile; fileRef = 96906B2D19E0766500AA5BE8 /* ピタゴラスsmall.png */; };
+		96906B5219E0766500AA5BE8 /* ブライアン・アダムスsmall.png in Resources */ = {isa = PBXBuildFile; fileRef = 96906B2E19E0766500AA5BE8 /* ブライアン・アダムスsmall.png */; };
+		96906B5319E0766500AA5BE8 /* ベンジャミン・フランクリンsmall.png in Resources */ = {isa = PBXBuildFile; fileRef = 96906B2F19E0766500AA5BE8 /* ベンジャミン・フランクリンsmall.png */; };
+		96906B5419E0766500AA5BE8 /* ヘンリー・フォードsmall.png in Resources */ = {isa = PBXBuildFile; fileRef = 96906B3019E0766500AA5BE8 /* ヘンリー・フォードsmall.png */; };
+		96906B5519E0766500AA5BE8 /* レオナルド・ダ・ヴィンチsmall.png in Resources */ = {isa = PBXBuildFile; fileRef = 96906B3119E0766500AA5BE8 /* レオナルド・ダ・ヴィンチsmall.png */; };
+		96906B5619E0766500AA5BE8 /* 坂本龍馬small.png in Resources */ = {isa = PBXBuildFile; fileRef = 96906B3219E0766500AA5BE8 /* 坂本龍馬small.png */; };
+		96906B5719E0766500AA5BE8 /* 夏目漱石small.png in Resources */ = {isa = PBXBuildFile; fileRef = 96906B3319E0766500AA5BE8 /* 夏目漱石small.png */; };
+		96906B5819E0766500AA5BE8 /* 孔子small.png in Resources */ = {isa = PBXBuildFile; fileRef = 96906B3419E0766500AA5BE8 /* 孔子small.png */; };
+		96906B5919E0766500AA5BE8 /* 徳川家康small.png in Resources */ = {isa = PBXBuildFile; fileRef = 96906B3519E0766500AA5BE8 /* 徳川家康small.png */; };
+		96906B5A19E0766500AA5BE8 /* 斎藤茂太small.png in Resources */ = {isa = PBXBuildFile; fileRef = 96906B3619E0766500AA5BE8 /* 斎藤茂太small.png */; };
+		96906B5B19E0766500AA5BE8 /* 本田宗一郎small.png in Resources */ = {isa = PBXBuildFile; fileRef = 96906B3719E0766500AA5BE8 /* 本田宗一郎small.png */; };
+		96906B5C19E0766500AA5BE8 /* 松下幸之助small.png in Resources */ = {isa = PBXBuildFile; fileRef = 96906B3819E0766500AA5BE8 /* 松下幸之助small.png */; };
+		96906B5D19E0766500AA5BE8 /* 湯川秀樹small.png in Resources */ = {isa = PBXBuildFile; fileRef = 96906B3919E0766500AA5BE8 /* 湯川秀樹small.png */; };
+		96906B5E19E0766500AA5BE8 /* 織田信長small.png in Resources */ = {isa = PBXBuildFile; fileRef = 96906B3A19E0766500AA5BE8 /* 織田信長small.png */; };
+		96906B5F19E0766500AA5BE8 /* 芥川龍之介small.png in Resources */ = {isa = PBXBuildFile; fileRef = 96906B3B19E0766500AA5BE8 /* 芥川龍之介small.png */; };
+		96906B8619E0781700AA5BE8 /* アイザック・ニュートン.png in Resources */ = {isa = PBXBuildFile; fileRef = 96906B6219E0781700AA5BE8 /* アイザック・ニュートン.png */; };
+		96906B8719E0781700AA5BE8 /* アルベルト・アインシュタイン.png in Resources */ = {isa = PBXBuildFile; fileRef = 96906B6319E0781700AA5BE8 /* アルベルト・アインシュタイン.png */; };
+		96906B8819E0781700AA5BE8 /* アンデルセン.png in Resources */ = {isa = PBXBuildFile; fileRef = 96906B6419E0781700AA5BE8 /* アンデルセン.png */; };
+		96906B8919E0781700AA5BE8 /* イチロー.png in Resources */ = {isa = PBXBuildFile; fileRef = 96906B6519E0781700AA5BE8 /* イチロー.png */; };
+		96906B8A19E0781700AA5BE8 /* ウォルト・ディズニー.png in Resources */ = {isa = PBXBuildFile; fileRef = 96906B6619E0781700AA5BE8 /* ウォルト・ディズニー.png */; };
+		96906B8B19E0781700AA5BE8 /* エイブラハム・リンカーン.png in Resources */ = {isa = PBXBuildFile; fileRef = 96906B6719E0781700AA5BE8 /* エイブラハム・リンカーン.png */; };
+		96906B8C19E0781700AA5BE8 /* オスカー・ワイルド.png in Resources */ = {isa = PBXBuildFile; fileRef = 96906B6819E0781700AA5BE8 /* オスカー・ワイルド.png */; };
+		96906B8D19E0781700AA5BE8 /* オノ・ヨーコ.png in Resources */ = {isa = PBXBuildFile; fileRef = 96906B6919E0781700AA5BE8 /* オノ・ヨーコ.png */; };
+		96906B8E19E0781700AA5BE8 /* オードリー・ヘップバーン.png in Resources */ = {isa = PBXBuildFile; fileRef = 96906B6A19E0781700AA5BE8 /* オードリー・ヘップバーン.png */; };
+		96906B8F19E0781700AA5BE8 /* ガリレオ・ガリレイ.png in Resources */ = {isa = PBXBuildFile; fileRef = 96906B6B19E0781700AA5BE8 /* ガリレオ・ガリレイ.png */; };
+		96906B9019E0781700AA5BE8 /* ゲーテ.png in Resources */ = {isa = PBXBuildFile; fileRef = 96906B6C19E0781700AA5BE8 /* ゲーテ.png */; };
+		96906B9119E0781700AA5BE8 /* ジョン・F・ケネディ.png in Resources */ = {isa = PBXBuildFile; fileRef = 96906B6D19E0781700AA5BE8 /* ジョン・F・ケネディ.png */; };
+		96906B9219E0781700AA5BE8 /* スティーブ・ジョブズ.png in Resources */ = {isa = PBXBuildFile; fileRef = 96906B6E19E0781700AA5BE8 /* スティーブ・ジョブズ.png */; };
+		96906B9319E0781700AA5BE8 /* スピノザ.png in Resources */ = {isa = PBXBuildFile; fileRef = 96906B6F19E0781700AA5BE8 /* スピノザ.png */; };
+		96906B9419E0781700AA5BE8 /* セオドア・ルーズベルト.png in Resources */ = {isa = PBXBuildFile; fileRef = 96906B7019E0781700AA5BE8 /* セオドア・ルーズベルト.png */; };
+		96906B9519E0781700AA5BE8 /* デール・カーネギー.png in Resources */ = {isa = PBXBuildFile; fileRef = 96906B7119E0781700AA5BE8 /* デール・カーネギー.png */; };
+		96906B9619E0781700AA5BE8 /* トーマス・エジソン.png in Resources */ = {isa = PBXBuildFile; fileRef = 96906B7219E0781700AA5BE8 /* トーマス・エジソン.png */; };
+		96906B9719E0781700AA5BE8 /* ナポレオン・ボナパルト.png in Resources */ = {isa = PBXBuildFile; fileRef = 96906B7319E0781700AA5BE8 /* ナポレオン・ボナパルト.png */; };
+		96906B9819E0781700AA5BE8 /* ニーチェ.png in Resources */ = {isa = PBXBuildFile; fileRef = 96906B7419E0781700AA5BE8 /* ニーチェ.png */; };
+		96906B9919E0781700AA5BE8 /* ビル・ゲイツ.png in Resources */ = {isa = PBXBuildFile; fileRef = 96906B7519E0781700AA5BE8 /* ビル・ゲイツ.png */; };
+		96906B9A19E0781700AA5BE8 /* ピタゴラス.png in Resources */ = {isa = PBXBuildFile; fileRef = 96906B7619E0781700AA5BE8 /* ピタゴラス.png */; };
+		96906B9B19E0781700AA5BE8 /* ブライアン・アダムス.png in Resources */ = {isa = PBXBuildFile; fileRef = 96906B7719E0781700AA5BE8 /* ブライアン・アダムス.png */; };
+		96906B9C19E0781700AA5BE8 /* ベンジャミン・フランクリン.png in Resources */ = {isa = PBXBuildFile; fileRef = 96906B7819E0781700AA5BE8 /* ベンジャミン・フランクリン.png */; };
+		96906B9D19E0781700AA5BE8 /* ヘンリー・フォード.png in Resources */ = {isa = PBXBuildFile; fileRef = 96906B7919E0781700AA5BE8 /* ヘンリー・フォード.png */; };
+		96906B9E19E0781700AA5BE8 /* レオナルド・ダ・ヴィンチ.png in Resources */ = {isa = PBXBuildFile; fileRef = 96906B7A19E0781700AA5BE8 /* レオナルド・ダ・ヴィンチ.png */; };
+		96906B9F19E0781700AA5BE8 /* 坂本龍馬.png in Resources */ = {isa = PBXBuildFile; fileRef = 96906B7B19E0781700AA5BE8 /* 坂本龍馬.png */; };
+		96906BA019E0781700AA5BE8 /* 夏目漱石.png in Resources */ = {isa = PBXBuildFile; fileRef = 96906B7C19E0781700AA5BE8 /* 夏目漱石.png */; };
+		96906BA119E0781700AA5BE8 /* 孔子.png in Resources */ = {isa = PBXBuildFile; fileRef = 96906B7D19E0781700AA5BE8 /* 孔子.png */; };
+		96906BA219E0781700AA5BE8 /* 徳川家康.png in Resources */ = {isa = PBXBuildFile; fileRef = 96906B7E19E0781700AA5BE8 /* 徳川家康.png */; };
+		96906BA319E0781700AA5BE8 /* 斎藤茂太.png in Resources */ = {isa = PBXBuildFile; fileRef = 96906B7F19E0781700AA5BE8 /* 斎藤茂太.png */; };
+		96906BA419E0781700AA5BE8 /* 本田宗一郎.png in Resources */ = {isa = PBXBuildFile; fileRef = 96906B8019E0781700AA5BE8 /* 本田宗一郎.png */; };
+		96906BA519E0781700AA5BE8 /* 松下幸之助.png in Resources */ = {isa = PBXBuildFile; fileRef = 96906B8119E0781700AA5BE8 /* 松下幸之助.png */; };
+		96906BA619E0781700AA5BE8 /* 湯川秀樹.png in Resources */ = {isa = PBXBuildFile; fileRef = 96906B8219E0781700AA5BE8 /* 湯川秀樹.png */; };
+		96906BA719E0781700AA5BE8 /* 織田信長.png in Resources */ = {isa = PBXBuildFile; fileRef = 96906B8319E0781700AA5BE8 /* 織田信長.png */; };
+		96906BA819E0781700AA5BE8 /* 芥川龍之介.png in Resources */ = {isa = PBXBuildFile; fileRef = 96906B8419E0781700AA5BE8 /* 芥川龍之介.png */; };
 		96E12E6F19D9A0BA006921EF /* WikiViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 96E12E6E19D9A0BA006921EF /* WikiViewController.m */; };
 /* End PBXBuildFile section */
 
@@ -47,6 +118,77 @@
 		962A11AF19D852A000469165 /* PhraseTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhraseTableViewController.m; sourceTree = "<group>"; };
 		962A11B119D852BD00469165 /* FavoriteTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FavoriteTableViewController.h; sourceTree = "<group>"; };
 		962A11B219D852BD00469165 /* FavoriteTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FavoriteTableViewController.m; sourceTree = "<group>"; };
+		96906B1819E0766500AA5BE8 /* wiki.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = wiki.png; sourceTree = "<group>"; };
+		96906B1919E0766500AA5BE8 /* アイザック・ニュートンsmall.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "アイザック・ニュートンsmall.png"; sourceTree = "<group>"; };
+		96906B1A19E0766500AA5BE8 /* アルベルト・アインシュタインsmall.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "アルベルト・アインシュタインsmall.png"; sourceTree = "<group>"; };
+		96906B1B19E0766500AA5BE8 /* アンデルセンsmall.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "アンデルセンsmall.png"; sourceTree = "<group>"; };
+		96906B1C19E0766500AA5BE8 /* イチローsmall.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "イチローsmall.png"; sourceTree = "<group>"; };
+		96906B1D19E0766500AA5BE8 /* ウォルト・ディズニーsmall.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ウォルト・ディズニーsmall.png"; sourceTree = "<group>"; };
+		96906B1E19E0766500AA5BE8 /* エイブラハム・リンカーンsmall.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "エイブラハム・リンカーンsmall.png"; sourceTree = "<group>"; };
+		96906B1F19E0766500AA5BE8 /* オスカー・ワイルドsmall.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "オスカー・ワイルドsmall.png"; sourceTree = "<group>"; };
+		96906B2019E0766500AA5BE8 /* オノ・ヨーコsmall.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "オノ・ヨーコsmall.png"; sourceTree = "<group>"; };
+		96906B2119E0766500AA5BE8 /* オードリー・ヘップバーンsmall.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "オードリー・ヘップバーンsmall.png"; sourceTree = "<group>"; };
+		96906B2219E0766500AA5BE8 /* ガリレオ・ガリレイsmall.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ガリレオ・ガリレイsmall.png"; sourceTree = "<group>"; };
+		96906B2319E0766500AA5BE8 /* ゲーテsmall.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ゲーテsmall.png"; sourceTree = "<group>"; };
+		96906B2419E0766500AA5BE8 /* ジョン・F・ケネディsmall.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ジョン・F・ケネディsmall.png"; sourceTree = "<group>"; };
+		96906B2519E0766500AA5BE8 /* スティーブ・ジョブズsmall.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "スティーブ・ジョブズsmall.png"; sourceTree = "<group>"; };
+		96906B2619E0766500AA5BE8 /* スピノザsmall.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "スピノザsmall.png"; sourceTree = "<group>"; };
+		96906B2719E0766500AA5BE8 /* セオドア・ルーズベルトsmall.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "セオドア・ルーズベルトsmall.png"; sourceTree = "<group>"; };
+		96906B2819E0766500AA5BE8 /* デール・カーネギーsmall.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "デール・カーネギーsmall.png"; sourceTree = "<group>"; };
+		96906B2919E0766500AA5BE8 /* トーマス・エジソンsmall.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "トーマス・エジソンsmall.png"; sourceTree = "<group>"; };
+		96906B2A19E0766500AA5BE8 /* ナポレオン・ボナパルトsmall.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ナポレオン・ボナパルトsmall.png"; sourceTree = "<group>"; };
+		96906B2B19E0766500AA5BE8 /* ニーチェsmall.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ニーチェsmall.png"; sourceTree = "<group>"; };
+		96906B2C19E0766500AA5BE8 /* ビル・ゲイツsmall.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ビル・ゲイツsmall.png"; sourceTree = "<group>"; };
+		96906B2D19E0766500AA5BE8 /* ピタゴラスsmall.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ピタゴラスsmall.png"; sourceTree = "<group>"; };
+		96906B2E19E0766500AA5BE8 /* ブライアン・アダムスsmall.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ブライアン・アダムスsmall.png"; sourceTree = "<group>"; };
+		96906B2F19E0766500AA5BE8 /* ベンジャミン・フランクリンsmall.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ベンジャミン・フランクリンsmall.png"; sourceTree = "<group>"; };
+		96906B3019E0766500AA5BE8 /* ヘンリー・フォードsmall.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ヘンリー・フォードsmall.png"; sourceTree = "<group>"; };
+		96906B3119E0766500AA5BE8 /* レオナルド・ダ・ヴィンチsmall.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "レオナルド・ダ・ヴィンチsmall.png"; sourceTree = "<group>"; };
+		96906B3219E0766500AA5BE8 /* 坂本龍馬small.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "坂本龍馬small.png"; sourceTree = "<group>"; };
+		96906B3319E0766500AA5BE8 /* 夏目漱石small.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "夏目漱石small.png"; sourceTree = "<group>"; };
+		96906B3419E0766500AA5BE8 /* 孔子small.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "孔子small.png"; sourceTree = "<group>"; };
+		96906B3519E0766500AA5BE8 /* 徳川家康small.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "徳川家康small.png"; sourceTree = "<group>"; };
+		96906B3619E0766500AA5BE8 /* 斎藤茂太small.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "斎藤茂太small.png"; sourceTree = "<group>"; };
+		96906B3719E0766500AA5BE8 /* 本田宗一郎small.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "本田宗一郎small.png"; sourceTree = "<group>"; };
+		96906B3819E0766500AA5BE8 /* 松下幸之助small.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "松下幸之助small.png"; sourceTree = "<group>"; };
+		96906B3919E0766500AA5BE8 /* 湯川秀樹small.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "湯川秀樹small.png"; sourceTree = "<group>"; };
+		96906B3A19E0766500AA5BE8 /* 織田信長small.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "織田信長small.png"; sourceTree = "<group>"; };
+		96906B3B19E0766500AA5BE8 /* 芥川龍之介small.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "芥川龍之介small.png"; sourceTree = "<group>"; };
+		96906B6219E0781700AA5BE8 /* アイザック・ニュートン.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "アイザック・ニュートン.png"; path = "resource/アイザック・ニュートン.png"; sourceTree = "<group>"; };
+		96906B6319E0781700AA5BE8 /* アルベルト・アインシュタイン.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "アルベルト・アインシュタイン.png"; path = "resource/アルベルト・アインシュタイン.png"; sourceTree = "<group>"; };
+		96906B6419E0781700AA5BE8 /* アンデルセン.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "アンデルセン.png"; path = "resource/アンデルセン.png"; sourceTree = "<group>"; };
+		96906B6519E0781700AA5BE8 /* イチロー.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "イチロー.png"; path = "resource/イチロー.png"; sourceTree = "<group>"; };
+		96906B6619E0781700AA5BE8 /* ウォルト・ディズニー.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "ウォルト・ディズニー.png"; path = "resource/ウォルト・ディズニー.png"; sourceTree = "<group>"; };
+		96906B6719E0781700AA5BE8 /* エイブラハム・リンカーン.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "エイブラハム・リンカーン.png"; path = "resource/エイブラハム・リンカーン.png"; sourceTree = "<group>"; };
+		96906B6819E0781700AA5BE8 /* オスカー・ワイルド.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "オスカー・ワイルド.png"; path = "resource/オスカー・ワイルド.png"; sourceTree = "<group>"; };
+		96906B6919E0781700AA5BE8 /* オノ・ヨーコ.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "オノ・ヨーコ.png"; path = "resource/オノ・ヨーコ.png"; sourceTree = "<group>"; };
+		96906B6A19E0781700AA5BE8 /* オードリー・ヘップバーン.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "オードリー・ヘップバーン.png"; path = "resource/オードリー・ヘップバーン.png"; sourceTree = "<group>"; };
+		96906B6B19E0781700AA5BE8 /* ガリレオ・ガリレイ.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "ガリレオ・ガリレイ.png"; path = "resource/ガリレオ・ガリレイ.png"; sourceTree = "<group>"; };
+		96906B6C19E0781700AA5BE8 /* ゲーテ.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "ゲーテ.png"; path = "resource/ゲーテ.png"; sourceTree = "<group>"; };
+		96906B6D19E0781700AA5BE8 /* ジョン・F・ケネディ.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "ジョン・F・ケネディ.png"; path = "resource/ジョン・F・ケネディ.png"; sourceTree = "<group>"; };
+		96906B6E19E0781700AA5BE8 /* スティーブ・ジョブズ.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "スティーブ・ジョブズ.png"; path = "resource/スティーブ・ジョブズ.png"; sourceTree = "<group>"; };
+		96906B6F19E0781700AA5BE8 /* スピノザ.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "スピノザ.png"; path = "resource/スピノザ.png"; sourceTree = "<group>"; };
+		96906B7019E0781700AA5BE8 /* セオドア・ルーズベルト.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "セオドア・ルーズベルト.png"; path = "resource/セオドア・ルーズベルト.png"; sourceTree = "<group>"; };
+		96906B7119E0781700AA5BE8 /* デール・カーネギー.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "デール・カーネギー.png"; path = "resource/デール・カーネギー.png"; sourceTree = "<group>"; };
+		96906B7219E0781700AA5BE8 /* トーマス・エジソン.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "トーマス・エジソン.png"; path = "resource/トーマス・エジソン.png"; sourceTree = "<group>"; };
+		96906B7319E0781700AA5BE8 /* ナポレオン・ボナパルト.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "ナポレオン・ボナパルト.png"; path = "resource/ナポレオン・ボナパルト.png"; sourceTree = "<group>"; };
+		96906B7419E0781700AA5BE8 /* ニーチェ.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "ニーチェ.png"; path = "resource/ニーチェ.png"; sourceTree = "<group>"; };
+		96906B7519E0781700AA5BE8 /* ビル・ゲイツ.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "ビル・ゲイツ.png"; path = "resource/ビル・ゲイツ.png"; sourceTree = "<group>"; };
+		96906B7619E0781700AA5BE8 /* ピタゴラス.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "ピタゴラス.png"; path = "resource/ピタゴラス.png"; sourceTree = "<group>"; };
+		96906B7719E0781700AA5BE8 /* ブライアン・アダムス.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "ブライアン・アダムス.png"; path = "resource/ブライアン・アダムス.png"; sourceTree = "<group>"; };
+		96906B7819E0781700AA5BE8 /* ベンジャミン・フランクリン.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "ベンジャミン・フランクリン.png"; path = "resource/ベンジャミン・フランクリン.png"; sourceTree = "<group>"; };
+		96906B7919E0781700AA5BE8 /* ヘンリー・フォード.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "ヘンリー・フォード.png"; path = "resource/ヘンリー・フォード.png"; sourceTree = "<group>"; };
+		96906B7A19E0781700AA5BE8 /* レオナルド・ダ・ヴィンチ.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "レオナルド・ダ・ヴィンチ.png"; path = "resource/レオナルド・ダ・ヴィンチ.png"; sourceTree = "<group>"; };
+		96906B7B19E0781700AA5BE8 /* 坂本龍馬.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "坂本龍馬.png"; path = "resource/坂本龍馬.png"; sourceTree = "<group>"; };
+		96906B7C19E0781700AA5BE8 /* 夏目漱石.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "夏目漱石.png"; path = "resource/夏目漱石.png"; sourceTree = "<group>"; };
+		96906B7D19E0781700AA5BE8 /* 孔子.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "孔子.png"; path = "resource/孔子.png"; sourceTree = "<group>"; };
+		96906B7E19E0781700AA5BE8 /* 徳川家康.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "徳川家康.png"; path = "resource/徳川家康.png"; sourceTree = "<group>"; };
+		96906B7F19E0781700AA5BE8 /* 斎藤茂太.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "斎藤茂太.png"; path = "resource/斎藤茂太.png"; sourceTree = "<group>"; };
+		96906B8019E0781700AA5BE8 /* 本田宗一郎.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "本田宗一郎.png"; path = "resource/本田宗一郎.png"; sourceTree = "<group>"; };
+		96906B8119E0781700AA5BE8 /* 松下幸之助.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "松下幸之助.png"; path = "resource/松下幸之助.png"; sourceTree = "<group>"; };
+		96906B8219E0781700AA5BE8 /* 湯川秀樹.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "湯川秀樹.png"; path = "resource/湯川秀樹.png"; sourceTree = "<group>"; };
+		96906B8319E0781700AA5BE8 /* 織田信長.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "織田信長.png"; path = "resource/織田信長.png"; sourceTree = "<group>"; };
+		96906B8419E0781700AA5BE8 /* 芥川龍之介.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "芥川龍之介.png"; path = "resource/芥川龍之介.png"; sourceTree = "<group>"; };
 		96E12E6D19D9A0BA006921EF /* WikiViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WikiViewController.h; sourceTree = "<group>"; };
 		96E12E6E19D9A0BA006921EF /* WikiViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WikiViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -90,6 +232,7 @@
 		9624A04A19D840DE00466A0E /* GreatPhrase */ = {
 			isa = PBXGroup;
 			children = (
+				96906B1719E0766500AA5BE8 /* resource */,
 				9624A04F19D840DE00466A0E /* AppDelegate.h */,
 				9624A05019D840DE00466A0E /* AppDelegate.m */,
 				9624A05219D840DE00466A0E /* ViewController.h */,
@@ -132,6 +275,84 @@
 				9624A06619D840DE00466A0E /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		96906B1719E0766500AA5BE8 /* resource */ = {
+			isa = PBXGroup;
+			children = (
+				96906B1819E0766500AA5BE8 /* wiki.png */,
+				96906B6219E0781700AA5BE8 /* アイザック・ニュートン.png */,
+				96906B6319E0781700AA5BE8 /* アルベルト・アインシュタイン.png */,
+				96906B6419E0781700AA5BE8 /* アンデルセン.png */,
+				96906B6519E0781700AA5BE8 /* イチロー.png */,
+				96906B6619E0781700AA5BE8 /* ウォルト・ディズニー.png */,
+				96906B6719E0781700AA5BE8 /* エイブラハム・リンカーン.png */,
+				96906B6819E0781700AA5BE8 /* オスカー・ワイルド.png */,
+				96906B6919E0781700AA5BE8 /* オノ・ヨーコ.png */,
+				96906B6A19E0781700AA5BE8 /* オードリー・ヘップバーン.png */,
+				96906B6B19E0781700AA5BE8 /* ガリレオ・ガリレイ.png */,
+				96906B6C19E0781700AA5BE8 /* ゲーテ.png */,
+				96906B6D19E0781700AA5BE8 /* ジョン・F・ケネディ.png */,
+				96906B6E19E0781700AA5BE8 /* スティーブ・ジョブズ.png */,
+				96906B6F19E0781700AA5BE8 /* スピノザ.png */,
+				96906B7019E0781700AA5BE8 /* セオドア・ルーズベルト.png */,
+				96906B7119E0781700AA5BE8 /* デール・カーネギー.png */,
+				96906B7219E0781700AA5BE8 /* トーマス・エジソン.png */,
+				96906B7319E0781700AA5BE8 /* ナポレオン・ボナパルト.png */,
+				96906B7419E0781700AA5BE8 /* ニーチェ.png */,
+				96906B7519E0781700AA5BE8 /* ビル・ゲイツ.png */,
+				96906B7619E0781700AA5BE8 /* ピタゴラス.png */,
+				96906B7719E0781700AA5BE8 /* ブライアン・アダムス.png */,
+				96906B7819E0781700AA5BE8 /* ベンジャミン・フランクリン.png */,
+				96906B7919E0781700AA5BE8 /* ヘンリー・フォード.png */,
+				96906B7A19E0781700AA5BE8 /* レオナルド・ダ・ヴィンチ.png */,
+				96906B7B19E0781700AA5BE8 /* 坂本龍馬.png */,
+				96906B7C19E0781700AA5BE8 /* 夏目漱石.png */,
+				96906B7D19E0781700AA5BE8 /* 孔子.png */,
+				96906B7E19E0781700AA5BE8 /* 徳川家康.png */,
+				96906B7F19E0781700AA5BE8 /* 斎藤茂太.png */,
+				96906B8019E0781700AA5BE8 /* 本田宗一郎.png */,
+				96906B8119E0781700AA5BE8 /* 松下幸之助.png */,
+				96906B8219E0781700AA5BE8 /* 湯川秀樹.png */,
+				96906B8319E0781700AA5BE8 /* 織田信長.png */,
+				96906B8419E0781700AA5BE8 /* 芥川龍之介.png */,
+				96906B1919E0766500AA5BE8 /* アイザック・ニュートンsmall.png */,
+				96906B1A19E0766500AA5BE8 /* アルベルト・アインシュタインsmall.png */,
+				96906B1B19E0766500AA5BE8 /* アンデルセンsmall.png */,
+				96906B1C19E0766500AA5BE8 /* イチローsmall.png */,
+				96906B1D19E0766500AA5BE8 /* ウォルト・ディズニーsmall.png */,
+				96906B1E19E0766500AA5BE8 /* エイブラハム・リンカーンsmall.png */,
+				96906B1F19E0766500AA5BE8 /* オスカー・ワイルドsmall.png */,
+				96906B2019E0766500AA5BE8 /* オノ・ヨーコsmall.png */,
+				96906B2119E0766500AA5BE8 /* オードリー・ヘップバーンsmall.png */,
+				96906B2219E0766500AA5BE8 /* ガリレオ・ガリレイsmall.png */,
+				96906B2319E0766500AA5BE8 /* ゲーテsmall.png */,
+				96906B2419E0766500AA5BE8 /* ジョン・F・ケネディsmall.png */,
+				96906B2519E0766500AA5BE8 /* スティーブ・ジョブズsmall.png */,
+				96906B2619E0766500AA5BE8 /* スピノザsmall.png */,
+				96906B2719E0766500AA5BE8 /* セオドア・ルーズベルトsmall.png */,
+				96906B2819E0766500AA5BE8 /* デール・カーネギーsmall.png */,
+				96906B2919E0766500AA5BE8 /* トーマス・エジソンsmall.png */,
+				96906B2A19E0766500AA5BE8 /* ナポレオン・ボナパルトsmall.png */,
+				96906B2B19E0766500AA5BE8 /* ニーチェsmall.png */,
+				96906B2C19E0766500AA5BE8 /* ビル・ゲイツsmall.png */,
+				96906B2D19E0766500AA5BE8 /* ピタゴラスsmall.png */,
+				96906B2E19E0766500AA5BE8 /* ブライアン・アダムスsmall.png */,
+				96906B2F19E0766500AA5BE8 /* ベンジャミン・フランクリンsmall.png */,
+				96906B3019E0766500AA5BE8 /* ヘンリー・フォードsmall.png */,
+				96906B3119E0766500AA5BE8 /* レオナルド・ダ・ヴィンチsmall.png */,
+				96906B3219E0766500AA5BE8 /* 坂本龍馬small.png */,
+				96906B3319E0766500AA5BE8 /* 夏目漱石small.png */,
+				96906B3419E0766500AA5BE8 /* 孔子small.png */,
+				96906B3519E0766500AA5BE8 /* 徳川家康small.png */,
+				96906B3619E0766500AA5BE8 /* 斎藤茂太small.png */,
+				96906B3719E0766500AA5BE8 /* 本田宗一郎small.png */,
+				96906B3819E0766500AA5BE8 /* 松下幸之助small.png */,
+				96906B3919E0766500AA5BE8 /* 湯川秀樹small.png */,
+				96906B3A19E0766500AA5BE8 /* 織田信長small.png */,
+				96906B3B19E0766500AA5BE8 /* 芥川龍之介small.png */,
+			);
+			path = resource;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -214,9 +435,80 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				96906B9A19E0781700AA5BE8 /* ピタゴラス.png in Resources */,
+				96906B9719E0781700AA5BE8 /* ナポレオン・ボナパルト.png in Resources */,
+				96906B3D19E0766500AA5BE8 /* アイザック・ニュートンsmall.png in Resources */,
+				96906B9619E0781700AA5BE8 /* トーマス・エジソン.png in Resources */,
+				96906B5219E0766500AA5BE8 /* ブライアン・アダムスsmall.png in Resources */,
+				96906BA719E0781700AA5BE8 /* 織田信長.png in Resources */,
+				96906B4119E0766500AA5BE8 /* ウォルト・ディズニーsmall.png in Resources */,
+				96906B9219E0781700AA5BE8 /* スティーブ・ジョブズ.png in Resources */,
+				96906B4019E0766500AA5BE8 /* イチローsmall.png in Resources */,
+				96906B9D19E0781700AA5BE8 /* ヘンリー・フォード.png in Resources */,
+				96906BA519E0781700AA5BE8 /* 松下幸之助.png in Resources */,
+				96906B8619E0781700AA5BE8 /* アイザック・ニュートン.png in Resources */,
+				96906B9119E0781700AA5BE8 /* ジョン・F・ケネディ.png in Resources */,
 				9624A05719D840DE00466A0E /* Main.storyboard in Resources */,
+				96906B4D19E0766500AA5BE8 /* トーマス・エジソンsmall.png in Resources */,
+				96906B8D19E0781700AA5BE8 /* オノ・ヨーコ.png in Resources */,
+				96906B4519E0766500AA5BE8 /* オードリー・ヘップバーンsmall.png in Resources */,
+				96906B8E19E0781700AA5BE8 /* オードリー・ヘップバーン.png in Resources */,
+				96906B8819E0781700AA5BE8 /* アンデルセン.png in Resources */,
 				9624A05C19D840DE00466A0E /* LaunchScreen.xib in Resources */,
+				96906B5719E0766500AA5BE8 /* 夏目漱石small.png in Resources */,
+				96906B5C19E0766500AA5BE8 /* 松下幸之助small.png in Resources */,
+				96906BA819E0781700AA5BE8 /* 芥川龍之介.png in Resources */,
+				96906B3F19E0766500AA5BE8 /* アンデルセンsmall.png in Resources */,
+				96906B9519E0781700AA5BE8 /* デール・カーネギー.png in Resources */,
+				96906B4F19E0766500AA5BE8 /* ニーチェsmall.png in Resources */,
+				96906BA319E0781700AA5BE8 /* 斎藤茂太.png in Resources */,
+				96906B5619E0766500AA5BE8 /* 坂本龍馬small.png in Resources */,
+				96906B4619E0766500AA5BE8 /* ガリレオ・ガリレイsmall.png in Resources */,
+				96906B5019E0766500AA5BE8 /* ビル・ゲイツsmall.png in Resources */,
+				96906B5419E0766500AA5BE8 /* ヘンリー・フォードsmall.png in Resources */,
+				96906B9819E0781700AA5BE8 /* ニーチェ.png in Resources */,
+				96906B5B19E0766500AA5BE8 /* 本田宗一郎small.png in Resources */,
+				96906B8A19E0781700AA5BE8 /* ウォルト・ディズニー.png in Resources */,
+				96906BA419E0781700AA5BE8 /* 本田宗一郎.png in Resources */,
+				96906B5A19E0766500AA5BE8 /* 斎藤茂太small.png in Resources */,
+				96906B4319E0766500AA5BE8 /* オスカー・ワイルドsmall.png in Resources */,
+				96906B4819E0766500AA5BE8 /* ジョン・F・ケネディsmall.png in Resources */,
+				96906B5319E0766500AA5BE8 /* ベンジャミン・フランクリンsmall.png in Resources */,
+				96906B9319E0781700AA5BE8 /* スピノザ.png in Resources */,
+				96906B8C19E0781700AA5BE8 /* オスカー・ワイルド.png in Resources */,
+				96906B8F19E0781700AA5BE8 /* ガリレオ・ガリレイ.png in Resources */,
+				96906B4A19E0766500AA5BE8 /* スピノザsmall.png in Resources */,
+				96906BA219E0781700AA5BE8 /* 徳川家康.png in Resources */,
+				96906B4B19E0766500AA5BE8 /* セオドア・ルーズベルトsmall.png in Resources */,
+				96906B4419E0766500AA5BE8 /* オノ・ヨーコsmall.png in Resources */,
+				96906B3E19E0766500AA5BE8 /* アルベルト・アインシュタインsmall.png in Resources */,
+				96906BA619E0781700AA5BE8 /* 湯川秀樹.png in Resources */,
+				96906B4719E0766500AA5BE8 /* ゲーテsmall.png in Resources */,
+				96906B8719E0781700AA5BE8 /* アルベルト・アインシュタイン.png in Resources */,
+				96906BA019E0781700AA5BE8 /* 夏目漱石.png in Resources */,
 				9624A05919D840DE00466A0E /* Images.xcassets in Resources */,
+				96906B4219E0766500AA5BE8 /* エイブラハム・リンカーンsmall.png in Resources */,
+				96906B4C19E0766500AA5BE8 /* デール・カーネギーsmall.png in Resources */,
+				96906B5919E0766500AA5BE8 /* 徳川家康small.png in Resources */,
+				96906B8919E0781700AA5BE8 /* イチロー.png in Resources */,
+				96906B9919E0781700AA5BE8 /* ビル・ゲイツ.png in Resources */,
+				96906B5D19E0766500AA5BE8 /* 湯川秀樹small.png in Resources */,
+				96906B9419E0781700AA5BE8 /* セオドア・ルーズベルト.png in Resources */,
+				96906B9019E0781700AA5BE8 /* ゲーテ.png in Resources */,
+				96906B9E19E0781700AA5BE8 /* レオナルド・ダ・ヴィンチ.png in Resources */,
+				96906B4919E0766500AA5BE8 /* スティーブ・ジョブズsmall.png in Resources */,
+				96906B8B19E0781700AA5BE8 /* エイブラハム・リンカーン.png in Resources */,
+				96906BA119E0781700AA5BE8 /* 孔子.png in Resources */,
+				96906B4E19E0766500AA5BE8 /* ナポレオン・ボナパルトsmall.png in Resources */,
+				96906B5119E0766500AA5BE8 /* ピタゴラスsmall.png in Resources */,
+				96906B5F19E0766500AA5BE8 /* 芥川龍之介small.png in Resources */,
+				96906B5819E0766500AA5BE8 /* 孔子small.png in Resources */,
+				96906B5519E0766500AA5BE8 /* レオナルド・ダ・ヴィンチsmall.png in Resources */,
+				96906B9C19E0781700AA5BE8 /* ベンジャミン・フランクリン.png in Resources */,
+				96906B3C19E0766500AA5BE8 /* wiki.png in Resources */,
+				96906B5E19E0766500AA5BE8 /* 織田信長small.png in Resources */,
+				96906B9F19E0781700AA5BE8 /* 坂本龍馬.png in Resources */,
+				96906B9B19E0781700AA5BE8 /* ブライアン・アダムス.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

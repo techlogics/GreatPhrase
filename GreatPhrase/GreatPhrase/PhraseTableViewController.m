@@ -144,7 +144,7 @@
                             @"name34":@"ブライアン・アダムス",
                             @"url34":@"http://ja.wikipedia.org/wiki/%E3%83%96%E3%83%A9%E3%82%A4%E3%82%A2%E3%83%B3%E3%83%BB%E3%82%A2%E3%83%80%E3%83%A0%E3%82%B9"},
                     @"35":@{@"phrase35":@"やるべきことはやる。自分がどうなろうとも、いかなる障害、危険、圧力があろうとも。これは人間道徳の基本。",
-                            @"name35":@"ジョン・　F・ケネディ",
+                            @"name35":@"ジョン・F・ケネディ",
                             @"url35":@"http://ja.wikipedia.org/wiki/%E3%82%B8%E3%83%A7%E3%83%B3%E3%83%BBF%E3%83%BB%E3%82%B1%E3%83%8D%E3%83%87%E3%82%A3"},
                     @"36":@{@"phrase36":@"気に入らないものは、棄てておくか、あるいは改善するかである。",
                             @"name36":@"ゲーテ",
@@ -202,7 +202,7 @@
     cell.textLabel.text = [_phraseList valueForKeyPath:[NSString stringWithFormat:@"%d.phrase%d", (int)indexPath.row, (int)indexPath.row]];
     NSString * name = [_phraseList valueForKeyPath:[NSString stringWithFormat:@"%d.name%d", (int)indexPath.row, (int)indexPath.row]];
     cell.detailTextLabel.text = name;
-    cell.imageView.image = [UIImage imageNamed:name];
+    cell.imageView.image = [UIImage imageNamed:[NSString stringWithFormat:@"%@small", name]];
     return cell;
 }
 
