@@ -13,6 +13,7 @@
 @property (weak, nonatomic) IBOutlet UILabel *phraseLabel;
 @property (weak, nonatomic) IBOutlet UIButton *name;
 @property (weak, nonatomic) IBOutlet UIButton *favoriteButton;
+@property (weak, nonatomic) IBOutlet UILabel *peopleLabel;
 @property (weak, nonatomic) IBOutlet UIButton *listButton;
 @property (weak, nonatomic) IBOutlet UIImageView *peopleImage;
 

@@ -87,6 +87,7 @@
 		96906BA619E0781700AA5BE8 /* 湯川秀樹.png in Resources */ = {isa = PBXBuildFile; fileRef = 96906B8219E0781700AA5BE8 /* 湯川秀樹.png */; };
 		96906BA719E0781700AA5BE8 /* 織田信長.png in Resources */ = {isa = PBXBuildFile; fileRef = 96906B8319E0781700AA5BE8 /* 織田信長.png */; };
 		96906BA819E0781700AA5BE8 /* 芥川龍之介.png in Resources */ = {isa = PBXBuildFile; fileRef = 96906B8419E0781700AA5BE8 /* 芥川龍之介.png */; };
+		96BEC02C19E2E89300C387A7 /* PhraseList.json in Resources */ = {isa = PBXBuildFile; fileRef = 96BEC02B19E2E89300C387A7 /* PhraseList.json */; };
 		96E12E6F19D9A0BA006921EF /* WikiViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 96E12E6E19D9A0BA006921EF /* WikiViewController.m */; };
 /* End PBXBuildFile section */
 
@@ -189,6 +190,7 @@
 		96906B8219E0781700AA5BE8 /* 湯川秀樹.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "湯川秀樹.png"; path = "resource/湯川秀樹.png"; sourceTree = "<group>"; };
 		96906B8319E0781700AA5BE8 /* 織田信長.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "織田信長.png"; path = "resource/織田信長.png"; sourceTree = "<group>"; };
 		96906B8419E0781700AA5BE8 /* 芥川龍之介.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "芥川龍之介.png"; path = "resource/芥川龍之介.png"; sourceTree = "<group>"; };
+		96BEC02B19E2E89300C387A7 /* PhraseList.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = PhraseList.json; sourceTree = "<group>"; };
 		96E12E6D19D9A0BA006921EF /* WikiViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WikiViewController.h; sourceTree = "<group>"; };
 		96E12E6E19D9A0BA006921EF /* WikiViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WikiViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -243,6 +245,7 @@
 				962A11B219D852BD00469165 /* FavoriteTableViewController.m */,
 				96E12E6D19D9A0BA006921EF /* WikiViewController.h */,
 				96E12E6E19D9A0BA006921EF /* WikiViewController.m */,
+				96BEC02B19E2E89300C387A7 /* PhraseList.json */,
 				9624A05519D840DE00466A0E /* Main.storyboard */,
 				9624A05A19D840DE00466A0E /* LaunchScreen.xib */,
 				9624A05819D840DE00466A0E /* Images.xcassets */,
@@ -442,6 +445,7 @@
 				96906B5219E0766500AA5BE8 /* ブライアン・アダムスsmall.png in Resources */,
 				96906BA719E0781700AA5BE8 /* 織田信長.png in Resources */,
 				96906B4119E0766500AA5BE8 /* ウォルト・ディズニーsmall.png in Resources */,
+				96BEC02C19E2E89300C387A7 /* PhraseList.json in Resources */,
 				96906B9219E0781700AA5BE8 /* スティーブ・ジョブズ.png in Resources */,
 				96906B4019E0766500AA5BE8 /* イチローsmall.png in Resources */,
 				96906B9D19E0781700AA5BE8 /* ヘンリー・フォード.png in Resources */,

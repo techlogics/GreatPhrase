@@ -80,6 +80,16 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vQF-8j-dwr">
+                                <rect key="frame" x="1" y="180" width="150" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="150" id="Ub6-l4-yhS"/>
+                                    <constraint firstAttribute="height" constant="20" id="nXJ-mY-4zN"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HiraMinProN-W3" family="Hiragino Mincho ProN" pointSize="11"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.96078431369999995" green="0.94509803920000002" blue="0.91372549020000005" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
@@ -88,10 +98,12 @@
                             <constraint firstItem="QF2-AZ-Q9L" firstAttribute="top" secondItem="In4-BZ-F0i" secondAttribute="bottom" constant="30" id="CIf-qK-IbP"/>
                             <constraint firstAttribute="centerY" secondItem="In4-BZ-F0i" secondAttribute="centerY" id="CRL-WH-JFR"/>
                             <constraint firstAttribute="trailingMargin" secondItem="ly0-Fq-AbE" secondAttribute="trailing" constant="20" id="Udc-JY-YRr"/>
+                            <constraint firstItem="vQF-8j-dwr" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="-15" id="ZGp-iH-y8G"/>
                             <constraint firstItem="In4-BZ-F0i" firstAttribute="top" secondItem="GMg-NC-Onh" secondAttribute="bottom" constant="30" id="amC-aq-d1P"/>
                             <constraint firstItem="GMg-NC-Onh" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="20" id="q35-9P-KIE"/>
                             <constraint firstItem="ly0-Fq-AbE" firstAttribute="top" secondItem="In4-BZ-F0i" secondAttribute="bottom" constant="30" id="rsi-13-5HC"/>
                             <constraint firstItem="QF2-AZ-Q9L" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="20" id="sg1-CH-sAy"/>
+                            <constraint firstItem="vQF-8j-dwr" firstAttribute="top" secondItem="GMg-NC-Onh" secondAttribute="bottom" constant="10" id="vnW-H4-A8X"/>
                             <constraint firstAttribute="centerX" secondItem="In4-BZ-F0i" secondAttribute="centerX" id="wY1-1R-3cq"/>
                         </constraints>
                     </view>
@@ -103,6 +115,7 @@
                         <outlet property="listButton" destination="ly0-Fq-AbE" id="zJs-BP-aba"/>
                         <outlet property="name" destination="4Zz-lw-SjK" id="p6u-76-wGf"/>
                         <outlet property="peopleImage" destination="GMg-NC-Onh" id="5jr-Z1-DGF"/>
+                        <outlet property="peopleLabel" destination="vQF-8j-dwr" id="7Ue-0T-JPF"/>
                         <outlet property="phraseLabel" destination="In4-BZ-F0i" id="t8x-3L-Bka"/>
                     </connections>
                 </viewController>
