@@ -16,6 +16,8 @@
 		9624A06819D840DE00466A0E /* GreatPhraseTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9624A06719D840DE00466A0E /* GreatPhraseTests.m */; };
 		962A11B019D852A000469165 /* PhraseTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 962A11AF19D852A000469165 /* PhraseTableViewController.m */; };
 		962A11B319D852BD00469165 /* FavoriteTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 962A11B219D852BD00469165 /* FavoriteTableViewController.m */; };
+		96483ADF19ECDB7A00296F60 /* LocalNotificationSettings.m in Sources */ = {isa = PBXBuildFile; fileRef = 96483ADE19ECDB7A00296F60 /* LocalNotificationSettings.m */; };
+		96483AE219ECE33600296F60 /* SettingsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 96483AE119ECE33600296F60 /* SettingsTableViewController.m */; };
 		96906B3C19E0766500AA5BE8 /* wiki.png in Resources */ = {isa = PBXBuildFile; fileRef = 96906B1819E0766500AA5BE8 /* wiki.png */; };
 		96906B3D19E0766500AA5BE8 /* アイザック・ニュートンsmall.png in Resources */ = {isa = PBXBuildFile; fileRef = 96906B1919E0766500AA5BE8 /* アイザック・ニュートンsmall.png */; };
 		96906B3E19E0766500AA5BE8 /* アルベルト・アインシュタインsmall.png in Resources */ = {isa = PBXBuildFile; fileRef = 96906B1A19E0766500AA5BE8 /* アルベルト・アインシュタインsmall.png */; };
@@ -119,6 +121,10 @@
 		962A11AF19D852A000469165 /* PhraseTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhraseTableViewController.m; sourceTree = "<group>"; };
 		962A11B119D852BD00469165 /* FavoriteTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FavoriteTableViewController.h; sourceTree = "<group>"; };
 		962A11B219D852BD00469165 /* FavoriteTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FavoriteTableViewController.m; sourceTree = "<group>"; };
+		96483ADD19ECDB7A00296F60 /* LocalNotificationSettings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocalNotificationSettings.h; sourceTree = "<group>"; };
+		96483ADE19ECDB7A00296F60 /* LocalNotificationSettings.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocalNotificationSettings.m; sourceTree = "<group>"; };
+		96483AE019ECE33600296F60 /* SettingsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsTableViewController.h; sourceTree = "<group>"; };
+		96483AE119ECE33600296F60 /* SettingsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsTableViewController.m; sourceTree = "<group>"; };
 		96906B1819E0766500AA5BE8 /* wiki.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = wiki.png; sourceTree = "<group>"; };
 		96906B1919E0766500AA5BE8 /* アイザック・ニュートンsmall.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "アイザック・ニュートンsmall.png"; sourceTree = "<group>"; };
 		96906B1A19E0766500AA5BE8 /* アルベルト・アインシュタインsmall.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "アルベルト・アインシュタインsmall.png"; sourceTree = "<group>"; };
@@ -243,8 +249,12 @@
 				962A11AF19D852A000469165 /* PhraseTableViewController.m */,
 				962A11B119D852BD00469165 /* FavoriteTableViewController.h */,
 				962A11B219D852BD00469165 /* FavoriteTableViewController.m */,
+				96483AE019ECE33600296F60 /* SettingsTableViewController.h */,
+				96483AE119ECE33600296F60 /* SettingsTableViewController.m */,
 				96E12E6D19D9A0BA006921EF /* WikiViewController.h */,
 				96E12E6E19D9A0BA006921EF /* WikiViewController.m */,
+				96483ADD19ECDB7A00296F60 /* LocalNotificationSettings.h */,
+				96483ADE19ECDB7A00296F60 /* LocalNotificationSettings.m */,
 				96BEC02B19E2E89300C387A7 /* PhraseList.json */,
 				9624A05519D840DE00466A0E /* Main.storyboard */,
 				9624A05A19D840DE00466A0E /* LaunchScreen.xib */,
@@ -530,10 +540,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				96483AE219ECE33600296F60 /* SettingsTableViewController.m in Sources */,
 				962A11B319D852BD00469165 /* FavoriteTableViewController.m in Sources */,
 				9624A05419D840DE00466A0E /* ViewController.m in Sources */,
 				9624A05119D840DE00466A0E /* AppDelegate.m in Sources */,
 				96E12E6F19D9A0BA006921EF /* WikiViewController.m in Sources */,
+				96483ADF19ECDB7A00296F60 /* LocalNotificationSettings.m in Sources */,
 				9624A04E19D840DE00466A0E /* main.m in Sources */,
 				962A11B019D852A000469165 /* PhraseTableViewController.m in Sources */,
 			);

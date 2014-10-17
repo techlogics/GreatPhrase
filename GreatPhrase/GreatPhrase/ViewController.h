@@ -15,7 +15,8 @@
 @property (weak, nonatomic) IBOutlet UIButton *favoriteButton;
 @property (weak, nonatomic) IBOutlet UILabel *peopleLabel;
 @property (weak, nonatomic) IBOutlet UIButton *listButton;
-@property (weak, nonatomic) IBOutlet UIImageView *peopleImage;
+@property (weak, nonatomic) IBOutlet UIButton *wikiButton;
+@property (weak, nonatomic) IBOutlet UIButton *settingsButton;
 
 - (IBAction)favorite:(id)sender;
 

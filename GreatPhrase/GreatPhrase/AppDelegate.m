@@ -7,6 +7,8 @@
 //
 
 #import "AppDelegate.h"
+#import "LocalNotificationSettings.h"
+#import "SettingsTableViewController.h"
 
 @interface AppDelegate ()
 
@@ -21,8 +23,9 @@
     if (launchOptions != nil) {
         UILocalNotification * notify = [launchOptions objectForKey:(UIApplicationLaunchOptionsLocalNotificationKey)];
         if (notify != nil) {
-            
             [[UIApplication sharedApplication] cancelLocalNotification:notify];
+            SettingsTableViewController * settingsTableViewController = [[SettingsTableViewController alloc] init];
+            [LocalNotificationSettings setLocalNotificationWith:[settingsTableViewController.userSettings objectForKey:@"date"]];
         }
     }
     return YES;

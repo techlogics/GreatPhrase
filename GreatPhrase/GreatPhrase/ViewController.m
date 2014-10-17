@@ -33,8 +33,9 @@
     
     _listButton.layer.cornerRadius = 40.0;
     _favoriteButton.layer.cornerRadius = 40.0;
-    _peopleImage.layer.cornerRadius = 40.0;
+    _settingsButton.layer.cornerRadius = 40.0;
     
+    // リソースの読み込み
     NSString * filePath = [[NSBundle mainBundle] pathForResource:@"PhraseList" ofType:@"json"];
     NSFileHandle * fileHandle = [NSFileHandle fileHandleForReadingAtPath:filePath];
     NSData * data = [fileHandle readDataToEndOfFile];
@@ -50,7 +51,7 @@
     leftSwipe.numberOfTouchesRequired = 1;
     [self.view addGestureRecognizer:leftSwipe];
     
-    
+    // 名言を表示
     _phraseLabel.numberOfLines = 0; // 行数無制限
     _phraseLabel.lineBreakMode = NSLineBreakByWordWrapping;
     int randomKey = arc4random() % _phraseList.count;
@@ -59,35 +60,7 @@
     _peopleLabel.text = _phraseList[[NSString stringWithFormat:@"%d", randomKey]][@"name"];
     _phraseLabel.text = [NSString stringWithFormat:@"%@", phrase];
     _wikiUrl = _phraseList[[NSString stringWithFormat:@"%d", randomKey]][@"url"];
-    _peopleImage.image = [UIImage imageNamed:[NSString stringWithFormat:@"%@.png", name]];
-    
-    
-    //------通知登録------//
-    NSCalendar *calendar = [[NSCalendar alloc] initWithCalendarIdentifier:NSCalendarIdentifierGregorian];
-    NSDate *now = [NSDate date];
-    NSDateComponents *componentsForFireDate = [calendar components:(NSCalendarUnitYear | NSCalendarUnitMonth |  NSCalendarUnitHour | NSCalendarUnitMinute| NSCalendarUnitSecond | NSCalendarUnitWeekday) fromDate: now];
-    
-    // 時間帯を固定
-    [componentsForFireDate setHour: 8];
-    [componentsForFireDate setMinute:0] ;
-    [componentsForFireDate setSecond:0] ;
-    [componentsForFireDate setTimeZone:[NSTimeZone defaultTimeZone]];
-    UILocalNotification* notifyAlarm = [[UILocalNotification alloc] init];
-    
-    // 一日ごとに通知を送る
-    notifyAlarm.repeatInterval = NSCalendarUnitDay;
-    
-    notifyAlarm.fireDate = [calendar dateFromComponents:componentsForFireDate];
-    NSLog(@"fireDate is %@",notifyAlarm.fireDate);
-    notifyAlarm.timeZone = [NSTimeZone defaultTimeZone];
-    
-    // 通知するメッセージ
-    notifyAlarm.alertBody = [NSString stringWithFormat:@"%@ - %@", phrase, name];
-    // ダイアログで表示されたときのボタンの文言
-    notifyAlarm.alertAction = @"Open";
-    //UILocalNotificationを実行する
-    [[UIApplication sharedApplication] scheduleLocalNotification:notifyAlarm];
-    
+    [_wikiButton setBackgroundImage:[UIImage imageNamed:[NSString stringWithFormat:@"%@.png", name]] forState:UIControlStateNormal];
 }
 
 - (void)didReceiveMemoryWarning
@@ -104,7 +77,8 @@
     _peopleLabel.text = _phraseList[[NSString stringWithFormat:@"%d", randomKey]][@"name"];
     _phraseLabel.text = [NSString stringWithFormat:@"%@", phrase];
     _wikiUrl = _phraseList[[NSString stringWithFormat:@"%d", randomKey]][@"url"];
-    _peopleImage.image = [UIImage imageNamed:[NSString stringWithFormat:@"%@.png", name]];
+    [_wikiButton setBackgroundImage:[UIImage imageNamed:[NSString stringWithFormat:@"%@.png", name]] forState:UIControlStateNormal];
+
 }
 
 // 左のスワイプでランダムにフレーズ切り替え
@@ -116,7 +90,8 @@
     _peopleLabel.text = _phraseList[[NSString stringWithFormat:@"%d", randomKey]][@"name"];
     _phraseLabel.text = [NSString stringWithFormat:@"%@", phrase];
     _wikiUrl = _phraseList[[NSString stringWithFormat:@"%d", randomKey]][@"url"];
-    _peopleImage.image = [UIImage imageNamed:[NSString stringWithFormat:@"%@.png", name]];
+    [_wikiButton setBackgroundImage:[UIImage imageNamed:[NSString stringWithFormat:@"%@.png", name]] forState:UIControlStateNormal];
+
 }
 
 // お気に入りに登録
