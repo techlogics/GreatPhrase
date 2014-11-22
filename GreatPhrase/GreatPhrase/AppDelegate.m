@@ -7,8 +7,6 @@
 //
 
 #import "AppDelegate.h"
-#import "LocalNotificationSettings.h"
-#import "SettingsTableViewController.h"
 
 @interface AppDelegate ()
 
@@ -18,16 +16,11 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    [application registerUserNotificationSettings:[UIUserNotificationSettings settingsForTypes:(UIUserNotificationTypeAlert | UIUserNotificationTypeBadge | UIUserNotificationTypeSound) categories:nil]];
+
     
-    if (launchOptions != nil) {
-        UILocalNotification * notify = [launchOptions objectForKey:(UIApplicationLaunchOptionsLocalNotificationKey)];
-        if (notify != nil) {
-            [[UIApplication sharedApplication] cancelLocalNotification:notify];
-            SettingsTableViewController * settingsTableViewController = [[SettingsTableViewController alloc] init];
-            [LocalNotificationSettings setLocalNotificationWith:[settingsTableViewController.userSettings objectForKey:@"date"]];
-        }
-    }
+    UIUserNotificationSettings *notificationSetting = [UIUserNotificationSettings settingsForTypes: UIUserNotificationTypeAlert | UIUserNotificationTypeBadge | UIUserNotificationTypeSound categories:nil];
+    [application registerUserNotificationSettings:notificationSetting];
+    
     return YES;
 }
 
@@ -39,6 +32,9 @@
 - (void)applicationDidEnterBackground:(UIApplication *)application {
     // Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later.
     // If your application supports background execution, this method is called instead of applicationWillTerminate: when the user quits.
+    
+    [LocalNotificationManager setLocalNotification];
+    
 }
 
 - (void)applicationWillEnterForeground:(UIApplication *)application {

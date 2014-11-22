@@ -7,7 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "PhraseTableViewCell.h"
 
 @interface PhraseTableViewController : UITableViewController
+
 @property NSDictionary * phraseList;
+
 @end

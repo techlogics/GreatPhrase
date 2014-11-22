@@ -15,12 +15,9 @@
 		9624A05C19D840DE00466A0E /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9624A05A19D840DE00466A0E /* LaunchScreen.xib */; };
 		9624A06819D840DE00466A0E /* GreatPhraseTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9624A06719D840DE00466A0E /* GreatPhraseTests.m */; };
 		962A11B019D852A000469165 /* PhraseTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 962A11AF19D852A000469165 /* PhraseTableViewController.m */; };
-		962A11B319D852BD00469165 /* FavoriteTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 962A11B219D852BD00469165 /* FavoriteTableViewController.m */; };
-		96483ADF19ECDB7A00296F60 /* LocalNotificationSettings.m in Sources */ = {isa = PBXBuildFile; fileRef = 96483ADE19ECDB7A00296F60 /* LocalNotificationSettings.m */; };
 		96483AE219ECE33600296F60 /* SettingsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 96483AE119ECE33600296F60 /* SettingsTableViewController.m */; };
-		96906B3C19E0766500AA5BE8 /* wiki.png in Resources */ = {isa = PBXBuildFile; fileRef = 96906B1819E0766500AA5BE8 /* wiki.png */; };
 		96906B3D19E0766500AA5BE8 /* アイザック・ニュートンsmall.png in Resources */ = {isa = PBXBuildFile; fileRef = 96906B1919E0766500AA5BE8 /* アイザック・ニュートンsmall.png */; };
-		96906B3E19E0766500AA5BE8 /* アルベルト・アインシュタインsmall.png in Resources */ = {isa = PBXBuildFile; fileRef = 96906B1A19E0766500AA5BE8 /* アルベルト・アインシュタインsmall.png */; };
+		96906B3E19E0766500AA5BE8 /* アインシュタインsmall.png in Resources */ = {isa = PBXBuildFile; fileRef = 96906B1A19E0766500AA5BE8 /* アインシュタインsmall.png */; };
 		96906B3F19E0766500AA5BE8 /* アンデルセンsmall.png in Resources */ = {isa = PBXBuildFile; fileRef = 96906B1B19E0766500AA5BE8 /* アンデルセンsmall.png */; };
 		96906B4019E0766500AA5BE8 /* イチローsmall.png in Resources */ = {isa = PBXBuildFile; fileRef = 96906B1C19E0766500AA5BE8 /* イチローsmall.png */; };
 		96906B4119E0766500AA5BE8 /* ウォルト・ディズニーsmall.png in Resources */ = {isa = PBXBuildFile; fileRef = 96906B1D19E0766500AA5BE8 /* ウォルト・ディズニーsmall.png */; };
@@ -55,7 +52,7 @@
 		96906B5E19E0766500AA5BE8 /* 織田信長small.png in Resources */ = {isa = PBXBuildFile; fileRef = 96906B3A19E0766500AA5BE8 /* 織田信長small.png */; };
 		96906B5F19E0766500AA5BE8 /* 芥川龍之介small.png in Resources */ = {isa = PBXBuildFile; fileRef = 96906B3B19E0766500AA5BE8 /* 芥川龍之介small.png */; };
 		96906B8619E0781700AA5BE8 /* アイザック・ニュートン.png in Resources */ = {isa = PBXBuildFile; fileRef = 96906B6219E0781700AA5BE8 /* アイザック・ニュートン.png */; };
-		96906B8719E0781700AA5BE8 /* アルベルト・アインシュタイン.png in Resources */ = {isa = PBXBuildFile; fileRef = 96906B6319E0781700AA5BE8 /* アルベルト・アインシュタイン.png */; };
+		96906B8719E0781700AA5BE8 /* アインシュタイン.png in Resources */ = {isa = PBXBuildFile; fileRef = 96906B6319E0781700AA5BE8 /* アインシュタイン.png */; };
 		96906B8819E0781700AA5BE8 /* アンデルセン.png in Resources */ = {isa = PBXBuildFile; fileRef = 96906B6419E0781700AA5BE8 /* アンデルセン.png */; };
 		96906B8919E0781700AA5BE8 /* イチロー.png in Resources */ = {isa = PBXBuildFile; fileRef = 96906B6519E0781700AA5BE8 /* イチロー.png */; };
 		96906B8A19E0781700AA5BE8 /* ウォルト・ディズニー.png in Resources */ = {isa = PBXBuildFile; fileRef = 96906B6619E0781700AA5BE8 /* ウォルト・ディズニー.png */; };
@@ -91,6 +88,10 @@
 		96906BA819E0781700AA5BE8 /* 芥川龍之介.png in Resources */ = {isa = PBXBuildFile; fileRef = 96906B8419E0781700AA5BE8 /* 芥川龍之介.png */; };
 		96BEC02C19E2E89300C387A7 /* PhraseList.json in Resources */ = {isa = PBXBuildFile; fileRef = 96BEC02B19E2E89300C387A7 /* PhraseList.json */; };
 		96E12E6F19D9A0BA006921EF /* WikiViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 96E12E6E19D9A0BA006921EF /* WikiViewController.m */; };
+		96E557D11A1DE6F90090D1D2 /* LocalNotificationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 96E557D01A1DE6F90090D1D2 /* LocalNotificationManager.m */; };
+		96E557D41A20F4510090D1D2 /* PhraseTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 96E557D31A20F4510090D1D2 /* PhraseTableViewCell.m */; };
+		96E557D61A20F8000090D1D2 /* share.png in Resources */ = {isa = PBXBuildFile; fileRef = 96E557D51A20F8000090D1D2 /* share.png */; };
+		96E557DC1A20FAE60090D1D2 /* setting.png in Resources */ = {isa = PBXBuildFile; fileRef = 96E557DB1A20FAE60090D1D2 /* setting.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -119,15 +120,10 @@
 		9624A06719D840DE00466A0E /* GreatPhraseTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GreatPhraseTests.m; sourceTree = "<group>"; };
 		962A11AE19D852A000469165 /* PhraseTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhraseTableViewController.h; sourceTree = "<group>"; };
 		962A11AF19D852A000469165 /* PhraseTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhraseTableViewController.m; sourceTree = "<group>"; };
-		962A11B119D852BD00469165 /* FavoriteTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FavoriteTableViewController.h; sourceTree = "<group>"; };
-		962A11B219D852BD00469165 /* FavoriteTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FavoriteTableViewController.m; sourceTree = "<group>"; };
-		96483ADD19ECDB7A00296F60 /* LocalNotificationSettings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocalNotificationSettings.h; sourceTree = "<group>"; };
-		96483ADE19ECDB7A00296F60 /* LocalNotificationSettings.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocalNotificationSettings.m; sourceTree = "<group>"; };
 		96483AE019ECE33600296F60 /* SettingsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsTableViewController.h; sourceTree = "<group>"; };
 		96483AE119ECE33600296F60 /* SettingsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsTableViewController.m; sourceTree = "<group>"; };
-		96906B1819E0766500AA5BE8 /* wiki.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = wiki.png; sourceTree = "<group>"; };
 		96906B1919E0766500AA5BE8 /* アイザック・ニュートンsmall.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "アイザック・ニュートンsmall.png"; sourceTree = "<group>"; };
-		96906B1A19E0766500AA5BE8 /* アルベルト・アインシュタインsmall.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "アルベルト・アインシュタインsmall.png"; sourceTree = "<group>"; };
+		96906B1A19E0766500AA5BE8 /* アインシュタインsmall.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "アインシュタインsmall.png"; sourceTree = "<group>"; };
 		96906B1B19E0766500AA5BE8 /* アンデルセンsmall.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "アンデルセンsmall.png"; sourceTree = "<group>"; };
 		96906B1C19E0766500AA5BE8 /* イチローsmall.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "イチローsmall.png"; sourceTree = "<group>"; };
 		96906B1D19E0766500AA5BE8 /* ウォルト・ディズニーsmall.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ウォルト・ディズニーsmall.png"; sourceTree = "<group>"; };
@@ -162,7 +158,7 @@
 		96906B3A19E0766500AA5BE8 /* 織田信長small.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "織田信長small.png"; sourceTree = "<group>"; };
 		96906B3B19E0766500AA5BE8 /* 芥川龍之介small.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "芥川龍之介small.png"; sourceTree = "<group>"; };
 		96906B6219E0781700AA5BE8 /* アイザック・ニュートン.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "アイザック・ニュートン.png"; path = "resource/アイザック・ニュートン.png"; sourceTree = "<group>"; };
-		96906B6319E0781700AA5BE8 /* アルベルト・アインシュタイン.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "アルベルト・アインシュタイン.png"; path = "resource/アルベルト・アインシュタイン.png"; sourceTree = "<group>"; };
+		96906B6319E0781700AA5BE8 /* アインシュタイン.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "アインシュタイン.png"; path = "resource/アインシュタイン.png"; sourceTree = "<group>"; };
 		96906B6419E0781700AA5BE8 /* アンデルセン.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "アンデルセン.png"; path = "resource/アンデルセン.png"; sourceTree = "<group>"; };
 		96906B6519E0781700AA5BE8 /* イチロー.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "イチロー.png"; path = "resource/イチロー.png"; sourceTree = "<group>"; };
 		96906B6619E0781700AA5BE8 /* ウォルト・ディズニー.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "ウォルト・ディズニー.png"; path = "resource/ウォルト・ディズニー.png"; sourceTree = "<group>"; };
@@ -199,6 +195,12 @@
 		96BEC02B19E2E89300C387A7 /* PhraseList.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = PhraseList.json; sourceTree = "<group>"; };
 		96E12E6D19D9A0BA006921EF /* WikiViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WikiViewController.h; sourceTree = "<group>"; };
 		96E12E6E19D9A0BA006921EF /* WikiViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WikiViewController.m; sourceTree = "<group>"; };
+		96E557CF1A1DE6F90090D1D2 /* LocalNotificationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocalNotificationManager.h; sourceTree = "<group>"; };
+		96E557D01A1DE6F90090D1D2 /* LocalNotificationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocalNotificationManager.m; sourceTree = "<group>"; };
+		96E557D21A20F4510090D1D2 /* PhraseTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhraseTableViewCell.h; sourceTree = "<group>"; };
+		96E557D31A20F4510090D1D2 /* PhraseTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhraseTableViewCell.m; sourceTree = "<group>"; };
+		96E557D51A20F8000090D1D2 /* share.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = share.png; sourceTree = "<group>"; };
+		96E557DB1A20FAE60090D1D2 /* setting.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = setting.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -247,19 +249,19 @@
 				9624A05319D840DE00466A0E /* ViewController.m */,
 				962A11AE19D852A000469165 /* PhraseTableViewController.h */,
 				962A11AF19D852A000469165 /* PhraseTableViewController.m */,
-				962A11B119D852BD00469165 /* FavoriteTableViewController.h */,
-				962A11B219D852BD00469165 /* FavoriteTableViewController.m */,
 				96483AE019ECE33600296F60 /* SettingsTableViewController.h */,
 				96483AE119ECE33600296F60 /* SettingsTableViewController.m */,
 				96E12E6D19D9A0BA006921EF /* WikiViewController.h */,
 				96E12E6E19D9A0BA006921EF /* WikiViewController.m */,
-				96483ADD19ECDB7A00296F60 /* LocalNotificationSettings.h */,
-				96483ADE19ECDB7A00296F60 /* LocalNotificationSettings.m */,
 				96BEC02B19E2E89300C387A7 /* PhraseList.json */,
 				9624A05519D840DE00466A0E /* Main.storyboard */,
 				9624A05A19D840DE00466A0E /* LaunchScreen.xib */,
 				9624A05819D840DE00466A0E /* Images.xcassets */,
 				9624A04B19D840DE00466A0E /* Supporting Files */,
+				96E557CF1A1DE6F90090D1D2 /* LocalNotificationManager.h */,
+				96E557D01A1DE6F90090D1D2 /* LocalNotificationManager.m */,
+				96E557D21A20F4510090D1D2 /* PhraseTableViewCell.h */,
+				96E557D31A20F4510090D1D2 /* PhraseTableViewCell.m */,
 			);
 			path = GreatPhrase;
 			sourceTree = "<group>";
@@ -293,9 +295,10 @@
 		96906B1719E0766500AA5BE8 /* resource */ = {
 			isa = PBXGroup;
 			children = (
-				96906B1819E0766500AA5BE8 /* wiki.png */,
+				96E557DB1A20FAE60090D1D2 /* setting.png */,
+				96E557D51A20F8000090D1D2 /* share.png */,
 				96906B6219E0781700AA5BE8 /* アイザック・ニュートン.png */,
-				96906B6319E0781700AA5BE8 /* アルベルト・アインシュタイン.png */,
+				96906B6319E0781700AA5BE8 /* アインシュタイン.png */,
 				96906B6419E0781700AA5BE8 /* アンデルセン.png */,
 				96906B6519E0781700AA5BE8 /* イチロー.png */,
 				96906B6619E0781700AA5BE8 /* ウォルト・ディズニー.png */,
@@ -330,7 +333,7 @@
 				96906B8319E0781700AA5BE8 /* 織田信長.png */,
 				96906B8419E0781700AA5BE8 /* 芥川龍之介.png */,
 				96906B1919E0766500AA5BE8 /* アイザック・ニュートンsmall.png */,
-				96906B1A19E0766500AA5BE8 /* アルベルト・アインシュタインsmall.png */,
+				96906B1A19E0766500AA5BE8 /* アインシュタインsmall.png */,
 				96906B1B19E0766500AA5BE8 /* アンデルセンsmall.png */,
 				96906B1C19E0766500AA5BE8 /* イチローsmall.png */,
 				96906B1D19E0766500AA5BE8 /* ウォルト・ディズニーsmall.png */,
@@ -458,6 +461,7 @@
 				96BEC02C19E2E89300C387A7 /* PhraseList.json in Resources */,
 				96906B9219E0781700AA5BE8 /* スティーブ・ジョブズ.png in Resources */,
 				96906B4019E0766500AA5BE8 /* イチローsmall.png in Resources */,
+				96E557DC1A20FAE60090D1D2 /* setting.png in Resources */,
 				96906B9D19E0781700AA5BE8 /* ヘンリー・フォード.png in Resources */,
 				96906BA519E0781700AA5BE8 /* 松下幸之助.png in Resources */,
 				96906B8619E0781700AA5BE8 /* アイザック・ニュートン.png in Resources */,
@@ -467,6 +471,7 @@
 				96906B8D19E0781700AA5BE8 /* オノ・ヨーコ.png in Resources */,
 				96906B4519E0766500AA5BE8 /* オードリー・ヘップバーンsmall.png in Resources */,
 				96906B8E19E0781700AA5BE8 /* オードリー・ヘップバーン.png in Resources */,
+				96E557D61A20F8000090D1D2 /* share.png in Resources */,
 				96906B8819E0781700AA5BE8 /* アンデルセン.png in Resources */,
 				9624A05C19D840DE00466A0E /* LaunchScreen.xib in Resources */,
 				96906B5719E0766500AA5BE8 /* 夏目漱石small.png in Resources */,
@@ -495,10 +500,10 @@
 				96906BA219E0781700AA5BE8 /* 徳川家康.png in Resources */,
 				96906B4B19E0766500AA5BE8 /* セオドア・ルーズベルトsmall.png in Resources */,
 				96906B4419E0766500AA5BE8 /* オノ・ヨーコsmall.png in Resources */,
-				96906B3E19E0766500AA5BE8 /* アルベルト・アインシュタインsmall.png in Resources */,
+				96906B3E19E0766500AA5BE8 /* アインシュタインsmall.png in Resources */,
 				96906BA619E0781700AA5BE8 /* 湯川秀樹.png in Resources */,
 				96906B4719E0766500AA5BE8 /* ゲーテsmall.png in Resources */,
-				96906B8719E0781700AA5BE8 /* アルベルト・アインシュタイン.png in Resources */,
+				96906B8719E0781700AA5BE8 /* アインシュタイン.png in Resources */,
 				96906BA019E0781700AA5BE8 /* 夏目漱石.png in Resources */,
 				9624A05919D840DE00466A0E /* Images.xcassets in Resources */,
 				96906B4219E0766500AA5BE8 /* エイブラハム・リンカーンsmall.png in Resources */,
@@ -519,7 +524,6 @@
 				96906B5819E0766500AA5BE8 /* 孔子small.png in Resources */,
 				96906B5519E0766500AA5BE8 /* レオナルド・ダ・ヴィンチsmall.png in Resources */,
 				96906B9C19E0781700AA5BE8 /* ベンジャミン・フランクリン.png in Resources */,
-				96906B3C19E0766500AA5BE8 /* wiki.png in Resources */,
 				96906B5E19E0766500AA5BE8 /* 織田信長small.png in Resources */,
 				96906B9F19E0781700AA5BE8 /* 坂本龍馬.png in Resources */,
 				96906B9B19E0781700AA5BE8 /* ブライアン・アダムス.png in Resources */,
@@ -541,12 +545,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				96483AE219ECE33600296F60 /* SettingsTableViewController.m in Sources */,
-				962A11B319D852BD00469165 /* FavoriteTableViewController.m in Sources */,
+				96E557D11A1DE6F90090D1D2 /* LocalNotificationManager.m in Sources */,
 				9624A05419D840DE00466A0E /* ViewController.m in Sources */,
 				9624A05119D840DE00466A0E /* AppDelegate.m in Sources */,
 				96E12E6F19D9A0BA006921EF /* WikiViewController.m in Sources */,
-				96483ADF19ECDB7A00296F60 /* LocalNotificationSettings.m in Sources */,
 				9624A04E19D840DE00466A0E /* main.m in Sources */,
+				96E557D41A20F4510090D1D2 /* PhraseTableViewCell.m in Sources */,
 				962A11B019D852A000469165 /* PhraseTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

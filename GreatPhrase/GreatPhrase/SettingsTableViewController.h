@@ -9,7 +9,6 @@
 #import <UIKit/UIKit.h>
 
 @interface SettingsTableViewController : UITableViewController
-@property (weak, nonatomic) IBOutlet UIDatePicker *datePicker;
-@property NSUserDefaults * userSettings;
-@property (weak, nonatomic) IBOutlet UILabel *currentLabel;
+@property (weak, nonatomic) IBOutlet UISwitch *notificationSwitch;
+@property (weak, nonatomic) IBOutlet UIDatePicker *notificationDate;
 @end

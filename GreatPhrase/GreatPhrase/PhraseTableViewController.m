@@ -41,19 +41,15 @@
     NSFileHandle * fileHandle = [NSFileHandle fileHandleForReadingAtPath:filePath];
     NSData * data = [fileHandle readDataToEndOfFile];
     _phraseList = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingMutableContainers error:nil];
-    
     return _phraseList.count;
 }
 
-
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"PhraseCell" forIndexPath:indexPath];
-    
-    cell.textLabel.numberOfLines = 0;
-    cell.textLabel.text = _phraseList[[NSString stringWithFormat:@"%d", (int)indexPath.row]][@"phrase"];
+    PhraseTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"PhraseCell" forIndexPath:indexPath];
     NSString * name = _phraseList[[NSString stringWithFormat:@"%d", (int)indexPath.row]][@"name"];
-    cell.detailTextLabel.text = name;
-    cell.imageView.image = [UIImage imageNamed:[NSString stringWithFormat:@"%@small", name]];
+    NSString * phrase = _phraseList[[NSString stringWithFormat:@"%d", (int)indexPath.row]][@"phrase"];
+    cell.phraseLabel.text = [NSString stringWithFormat:@"%@ - %@", phrase, name];
+    cell.peopleImage.image = [UIImage imageNamed:[NSString stringWithFormat:@"%@small", name]];
     return cell;
 }
 

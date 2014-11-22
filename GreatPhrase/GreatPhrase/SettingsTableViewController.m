@@ -8,7 +8,7 @@
 
 #import "SettingsTableViewController.h"
 
-@interface SettingsTableViewController ()
+@interface SettingsTableViewController () <UIAlertViewDelegate>
 
 @end
 
@@ -16,29 +16,16 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
-    
-    
+
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
     
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
-    _datePicker.minuteInterval = 5;
-    [_datePicker addTarget:self action:@selector(didPickerChanged:) forControlEvents:UIControlEventValueChanged];
-    _currentLabel.text = [_userSettings objectForKey:@"date"];
-}
+    [_notificationSwitch addTarget:self action:@selector(switchChanged:) forControlEvents:UIControlEventValueChanged];
+    [_notificationDate addTarget:self action:@selector(dateChanged:) forControlEvents:UIControlEventValueChanged];
 
-- (void)didPickerChanged:(UIDatePicker *)picker
-{
-    [_userSettings setObject:picker.date forKey:@"date"];
-    NSCalendar *calendar = [[NSCalendar alloc] initWithCalendarIdentifier:NSCalendarIdentifierGregorian];
-    NSDateComponents *componentsForFireDate = [calendar components:(NSCalendarUnitYear | NSCalendarUnitMonth |  NSCalendarUnitHour | NSCalendarUnitMinute| NSCalendarUnitSecond | NSCalendarUnitWeekday) fromDate: picker.date];
-    NSString * date = [NSString stringWithFormat:@"%d:%d", componentsForFireDate.hour, componentsForFireDate.minute];
-    UIAlertView * alert = [[UIAlertView alloc] initWithTitle:@"確認" message:date delegate:nil cancelButtonTitle:nil otherButtonTitles:@"OK", nil];
-    [alert show];
 }
-
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
@@ -55,6 +42,38 @@
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     // Return the number of rows in the section.
     return 2;
+}
+
+- (void)switchChanged:(UISwitch *)switchParts {
+    NSUserDefaults *setting = [NSUserDefaults standardUserDefaults];
+    if (_notificationSwitch.on) {
+        [setting setInteger:1 forKey:@"notification"];
+        [setting synchronize];
+        NSLog(@"%@", [setting objectForKey:@"notification"]);
+    } else {
+        [setting setInteger:0 forKey:@"notification"];
+        [setting synchronize];
+        NSLog(@"%@", [setting objectForKey:@"notification"]);
+    }
+}
+
+- (void)dateChanged:(UIDatePicker *)datePicker {
+    NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
+    [dateFormatter setLocale:[NSLocale systemLocale]];
+    [dateFormatter setTimeZone:[NSTimeZone systemTimeZone]];
+    [dateFormatter setDateFormat:@"H:mm"];
+    
+    NSUserDefaults *setting = [NSUserDefaults standardUserDefaults];
+    [setting setObject:[dateFormatter stringFromDate:datePicker.date] forKey:@"date"];
+    [setting synchronize];
+    NSLog(@"%@", [dateFormatter stringFromDate:datePicker.date]);
+    
+    NSString *alertBody = [NSString stringWithFormat:@"%@の時間で設定しました。", [dateFormatter stringFromDate:datePicker.date]];
+    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"確認" message:alertBody delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil, nil];
+    
+    [self.view addSubview:alert];
+    [alert show];
+    
 }
 
 /*
