@@ -80,6 +80,12 @@
     _phraseLabel.text = [NSString stringWithFormat:@"%@", phrase];
     _wikiUrl = _phraseList[[NSString stringWithFormat:@"%d", randomKey]][@"url"];
     [_wikiButton setBackgroundImage:[UIImage imageNamed:[NSString stringWithFormat:@"%@.png", name]] forState:UIControlStateNormal];
+    
+    [self.shareAnimation startCanvasAnimation];
+    [self.wikiAnimation startCanvasAnimation];
+    [self.settingsAnimation startCanvasAnimation];
+    [self.listAnimation startCanvasAnimation];
+    [self.phraseAnimation startCanvasAnimation];
 
 }
 
@@ -92,6 +98,13 @@
     _phraseLabel.text = [NSString stringWithFormat:@"%@", phrase];
     _wikiUrl = _phraseList[[NSString stringWithFormat:@"%d", randomKey]][@"url"];
     [_wikiButton setBackgroundImage:[UIImage imageNamed:[NSString stringWithFormat:@"%@.png", name]] forState:UIControlStateNormal];
+    
+    [self.shareAnimation startCanvasAnimation];
+    [self.wikiAnimation startCanvasAnimation];
+    [self.settingsAnimation startCanvasAnimation];
+    [self.listAnimation startCanvasAnimation];
+    [self.phraseAnimation startCanvasAnimation];
+
 }
 
 // お気に入りに登録
