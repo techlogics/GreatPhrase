@@ -80,7 +80,7 @@
     _phraseLabel.text = [NSString stringWithFormat:@"%@", phrase];
     _wikiUrl = _phraseList[[NSString stringWithFormat:@"%d", randomKey]][@"url"];
     [_wikiButton setBackgroundImage:[UIImage imageNamed:[NSString stringWithFormat:@"%@.png", name]] forState:UIControlStateNormal];
-    
+    self.phraseAnimation.type = @"bounceRight";
     [self.shareAnimation startCanvasAnimation];
     [self.wikiAnimation startCanvasAnimation];
     [self.settingsAnimation startCanvasAnimation];
@@ -98,7 +98,7 @@
     _phraseLabel.text = [NSString stringWithFormat:@"%@", phrase];
     _wikiUrl = _phraseList[[NSString stringWithFormat:@"%d", randomKey]][@"url"];
     [_wikiButton setBackgroundImage:[UIImage imageNamed:[NSString stringWithFormat:@"%@.png", name]] forState:UIControlStateNormal];
-    
+    self.phraseAnimation.type = @"bounceLeft";
     [self.shareAnimation startCanvasAnimation];
     [self.wikiAnimation startCanvasAnimation];
     [self.settingsAnimation startCanvasAnimation];

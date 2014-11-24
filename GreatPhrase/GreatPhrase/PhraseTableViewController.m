@@ -49,7 +49,7 @@
     NSString * name = _phraseList[[NSString stringWithFormat:@"%d", (int)indexPath.row]][@"name"];
     NSString * phrase = _phraseList[[NSString stringWithFormat:@"%d", (int)indexPath.row]][@"phrase"];
     cell.phraseLabel.text = [NSString stringWithFormat:@"%@ - %@", phrase, name];
-    cell.peopleImage.image = [UIImage imageNamed:[NSString stringWithFormat:@"%@small", name]];
+    cell.peopleImage.image = [UIImage imageNamed:[NSString stringWithFormat:@"%@", name]];
     return cell;
 }
 

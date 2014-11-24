@@ -68,7 +68,7 @@
     [setting synchronize];
     NSLog(@"%@", [dateFormatter stringFromDate:datePicker.date]);
     
-    NSString *alertBody = [NSString stringWithFormat:@"%@の時間で設定しました。", [dateFormatter stringFromDate:datePicker.date]];
+    NSString *alertBody = [NSString stringWithFormat:@"%@で設定しました。", [dateFormatter stringFromDate:datePicker.date]];
     UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"確認" message:alertBody delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil, nil];
     
     [self.view addSubview:alert];
