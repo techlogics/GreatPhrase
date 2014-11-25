@@ -63,18 +63,51 @@
     [dateFormatter setTimeZone:[NSTimeZone systemTimeZone]];
     [dateFormatter setDateFormat:@"H:mm"];
     
+    NSCalendar *currentCalendar = [NSCalendar currentCalendar];
+    NSDateComponents *dateComponetsOnSystemTimeZone = [[NSDateComponents alloc] init];
+    [dateComponetsOnSystemTimeZone setTimeZone:[NSTimeZone systemTimeZone]];
+    dateComponetsOnSystemTimeZone = [currentCalendar components:(NSCalendarUnitYear | NSCalendarUnitMonth | NSCalendarUnitDay | NSCalendarUnitHour | NSCalendarUnitMinute | NSCalendarUnitSecond) fromDate:datePicker.date];
+    
     NSUserDefaults *setting = [NSUserDefaults standardUserDefaults];
     [setting setObject:[dateFormatter stringFromDate:datePicker.date] forKey:@"date"];
+    [setting setInteger:[dateComponetsOnSystemTimeZone hour] forKey:@"hour"];
+    [setting setInteger:[dateComponetsOnSystemTimeZone minute] forKey:@"minute"];
     [setting synchronize];
+    
+    [[UIApplication sharedApplication] cancelAllLocalNotifications];
+    [dateComponetsOnSystemTimeZone setHour:[setting integerForKey:@"hour"]];
+    [dateComponetsOnSystemTimeZone setMinute:[setting integerForKey:@"minute"]];
+    [dateComponetsOnSystemTimeZone setSecond:0];
+    NSLog(@"fireDate確認ログ：dateComponentsOnSystemTimeZone:%@", dateComponetsOnSystemTimeZone);
+    NSDate *date = [currentCalendar dateFromComponents:dateComponetsOnSystemTimeZone];
+    UILocalNotification *notifyAlarm = [[UILocalNotification alloc] init];
+    notifyAlarm.repeatInterval = NSCalendarUnitDay;
+    notifyAlarm.fireDate = date;
+    NSLog(@"fireDate is %@",notifyAlarm.fireDate);
+    notifyAlarm.timeZone = [NSTimeZone defaultTimeZone];
+    
+    NSString * filePath = [[NSBundle mainBundle] pathForResource:@"PhraseList" ofType:@"json"];
+    NSFileHandle * fileHandle = [NSFileHandle fileHandleForReadingAtPath:filePath];
+    NSData * data = [fileHandle readDataToEndOfFile];
+    NSDictionary * phraseList = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingMutableContainers error:nil];
+    int randomKey = arc4random() % phraseList.count;
+    NSString * phrase = phraseList[[NSString stringWithFormat:@"%d", randomKey]][@"phrase"];
+    NSString * name = phraseList[[NSString stringWithFormat:@"%d", randomKey]][@"name"];
+    notifyAlarm.alertBody = [NSString stringWithFormat:@"%@ - %@", phrase, name];
+    [[UIApplication sharedApplication] scheduleLocalNotification:notifyAlarm];
+
+    
     NSLog(@"%@", [dateFormatter stringFromDate:datePicker.date]);
+    NSLog(@"%ld - %ld", (long)[setting integerForKey:@"hour"], (long)[setting integerForKey:@"minute"]);
     
     NSString *alertBody = [NSString stringWithFormat:@"%@で設定しました。", [dateFormatter stringFromDate:datePicker.date]];
     UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"確認" message:alertBody delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil, nil];
     
     [self.view addSubview:alert];
     [alert show];
-    
 }
+
+
 
 /*
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {

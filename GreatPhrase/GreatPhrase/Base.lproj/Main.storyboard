@@ -41,7 +41,7 @@
                                     <constraint firstAttribute="centerY" secondItem="QF2-AZ-Q9L" secondAttribute="centerY" id="kHM-h7-TDc"/>
                                 </constraints>
                                 <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="string" keyPath="type" value="morph"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="type" value="pop"/>
                                     <userDefinedRuntimeAttribute type="number" keyPath="delay">
                                         <integer key="value" value="0"/>
                                     </userDefinedRuntimeAttribute>
@@ -82,7 +82,7 @@
                                     <constraint firstAttribute="centerY" secondItem="dmk-h8-566" secondAttribute="centerY" id="yo0-O8-gIc"/>
                                 </constraints>
                                 <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="string" keyPath="type" value="morph"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="type" value="pop"/>
                                     <userDefinedRuntimeAttribute type="number" keyPath="delay">
                                         <integer key="value" value="0"/>
                                     </userDefinedRuntimeAttribute>
@@ -118,7 +118,7 @@
                                     <constraint firstAttribute="height" constant="120" id="yFW-3J-VRK"/>
                                 </constraints>
                                 <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="string" keyPath="type" value="morph"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="type" value="pop"/>
                                     <userDefinedRuntimeAttribute type="number" keyPath="delay">
                                         <integer key="value" value="0"/>
                                     </userDefinedRuntimeAttribute>
@@ -167,7 +167,7 @@
                                     <constraint firstItem="vQF-8j-dwr" firstAttribute="leading" secondItem="bF7-v2-cAV" secondAttribute="leading" constant="-15" id="pCY-68-s4a"/>
                                 </constraints>
                                 <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="string" keyPath="type" value="morph"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="type" value="pop"/>
                                     <userDefinedRuntimeAttribute type="number" keyPath="delay">
                                         <integer key="value" value="0"/>
                                     </userDefinedRuntimeAttribute>

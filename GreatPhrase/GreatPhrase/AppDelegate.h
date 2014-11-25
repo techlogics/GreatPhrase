@@ -7,7 +7,6 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "LocalNotificationManager.h"
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 

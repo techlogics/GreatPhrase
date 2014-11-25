@@ -54,7 +54,6 @@
 		96906BA819E0781700AA5BE8 /* 芥川龍之介.png in Resources */ = {isa = PBXBuildFile; fileRef = 96906B8419E0781700AA5BE8 /* 芥川龍之介.png */; };
 		96BEC02C19E2E89300C387A7 /* PhraseList.json in Resources */ = {isa = PBXBuildFile; fileRef = 96BEC02B19E2E89300C387A7 /* PhraseList.json */; };
 		96E12E6F19D9A0BA006921EF /* WikiViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 96E12E6E19D9A0BA006921EF /* WikiViewController.m */; };
-		96E557D11A1DE6F90090D1D2 /* LocalNotificationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 96E557D01A1DE6F90090D1D2 /* LocalNotificationManager.m */; };
 		96E557D41A20F4510090D1D2 /* PhraseTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 96E557D31A20F4510090D1D2 /* PhraseTableViewCell.m */; };
 		96E557D61A20F8000090D1D2 /* share.png in Resources */ = {isa = PBXBuildFile; fileRef = 96E557D51A20F8000090D1D2 /* share.png */; };
 		96E557DC1A20FAE60090D1D2 /* setting.png in Resources */ = {isa = PBXBuildFile; fileRef = 96E557DB1A20FAE60090D1D2 /* setting.png */; };
@@ -128,8 +127,6 @@
 		96BEC02B19E2E89300C387A7 /* PhraseList.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = PhraseList.json; sourceTree = "<group>"; };
 		96E12E6D19D9A0BA006921EF /* WikiViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WikiViewController.h; sourceTree = "<group>"; };
 		96E12E6E19D9A0BA006921EF /* WikiViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WikiViewController.m; sourceTree = "<group>"; };
-		96E557CF1A1DE6F90090D1D2 /* LocalNotificationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocalNotificationManager.h; sourceTree = "<group>"; };
-		96E557D01A1DE6F90090D1D2 /* LocalNotificationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocalNotificationManager.m; sourceTree = "<group>"; };
 		96E557D21A20F4510090D1D2 /* PhraseTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhraseTableViewCell.h; sourceTree = "<group>"; };
 		96E557D31A20F4510090D1D2 /* PhraseTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhraseTableViewCell.m; sourceTree = "<group>"; };
 		96E557D51A20F8000090D1D2 /* share.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = share.png; sourceTree = "<group>"; };
@@ -203,6 +200,8 @@
 				9624A05319D840DE00466A0E /* ViewController.m */,
 				962A11AE19D852A000469165 /* PhraseTableViewController.h */,
 				962A11AF19D852A000469165 /* PhraseTableViewController.m */,
+				96E557D21A20F4510090D1D2 /* PhraseTableViewCell.h */,
+				96E557D31A20F4510090D1D2 /* PhraseTableViewCell.m */,
 				96483AE019ECE33600296F60 /* SettingsTableViewController.h */,
 				96483AE119ECE33600296F60 /* SettingsTableViewController.m */,
 				96E12E6D19D9A0BA006921EF /* WikiViewController.h */,
@@ -212,10 +211,6 @@
 				9624A05A19D840DE00466A0E /* LaunchScreen.xib */,
 				9624A05819D840DE00466A0E /* Images.xcassets */,
 				9624A04B19D840DE00466A0E /* Supporting Files */,
-				96E557CF1A1DE6F90090D1D2 /* LocalNotificationManager.h */,
-				96E557D01A1DE6F90090D1D2 /* LocalNotificationManager.m */,
-				96E557D21A20F4510090D1D2 /* PhraseTableViewCell.h */,
-				96E557D31A20F4510090D1D2 /* PhraseTableViewCell.m */,
 			);
 			path = GreatPhrase;
 			sourceTree = "<group>";
@@ -464,7 +459,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				96483AE219ECE33600296F60 /* SettingsTableViewController.m in Sources */,
-				96E557D11A1DE6F90090D1D2 /* LocalNotificationManager.m in Sources */,
 				9624A05419D840DE00466A0E /* ViewController.m in Sources */,
 				9624A05119D840DE00466A0E /* AppDelegate.m in Sources */,
 				96E12E6F19D9A0BA006921EF /* WikiViewController.m in Sources */,
