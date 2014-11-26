@@ -196,7 +196,7 @@
                                         <integer key="value" value="0"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="number" keyPath="duration">
-                                        <real key="value" value="0.5"/>
+                                        <integer key="value" value="1"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
@@ -292,8 +292,8 @@
                                             <subviews>
                                                 <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="time" minuteInterval="30" translatesAutoresizingMaskIntoConstraints="NO" id="0dK-IH-quh">
                                                     <rect key="frame" x="0.0" y="19" width="600" height="162"/>
-                                                    <date key="date" timeIntervalSinceReferenceDate="438167011.18172503">
-                                                        <!--2014-11-20 09:03:31 +0000-->
+                                                    <date key="date" timeIntervalSinceReferenceDate="438102000.18172503">
+                                                        <!--2014-11-19 15:00:00 +0000-->
                                                     </date>
                                                 </datePicker>
                                             </subviews>

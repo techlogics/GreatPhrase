@@ -24,7 +24,6 @@
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
     [_notificationSwitch addTarget:self action:@selector(switchChanged:) forControlEvents:UIControlEventValueChanged];
     [_notificationDate addTarget:self action:@selector(dateChanged:) forControlEvents:UIControlEventValueChanged];
-
 }
 
 - (void)didReceiveMemoryWarning {
@@ -56,6 +55,7 @@
         NSLog(@"%@", [setting objectForKey:@"notification"]);
     }
 }
+
 
 - (void)dateChanged:(UIDatePicker *)datePicker {
     NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
@@ -95,7 +95,7 @@
     NSString * name = phraseList[[NSString stringWithFormat:@"%d", randomKey]][@"name"];
     notifyAlarm.alertBody = [NSString stringWithFormat:@"%@ - %@", phrase, name];
     [[UIApplication sharedApplication] scheduleLocalNotification:notifyAlarm];
-
+    
     
     NSLog(@"%@", [dateFormatter stringFromDate:datePicker.date]);
     NSLog(@"%ld - %ld", (long)[setting integerForKey:@"hour"], (long)[setting integerForKey:@"minute"]);
@@ -106,7 +106,6 @@
     [self.view addSubview:alert];
     [alert show];
 }
-
 
 
 /*
